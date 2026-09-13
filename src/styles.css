@@ -2,26 +2,26 @@
 
 :root {
   font-family: "DM Mono", ui-monospace, monospace;
-  color: #1c2521;
-  background: #f4ead8;
+  color: var(--ink);
+  background: var(--paper);
   font-synthesis: none;
-  --ink: #1c2521;
-  --paper: #f4ead8;
-  --paper-deep: #e9dcc4;
-  --leaf: #174d3b;
-  --leaf-dark: #103629;
+  --ink: #111111;
+  --paper: #ffffff;
+  --paper-deep: #f2f2f2;
+  --leaf: #111111;
+  --leaf-dark: #000000;
   --orange: #f26b3b;
-  --orange-dark: #b94222;
+  --orange-dark: #b9431b;
   --orange-bright: #ff8a61;
-  --cream: #fff9ef;
-  --line: #cdbfa8;
-  --muted: #66706a;
-  --danger: #a52f2f;
-  --cream-muted: #dce7da;
-  --orange-soft: #ffb195;
-  --leaf-line: #4b7762;
-  --cream-soft: #b8d4c1;
-  --shadow: 0 20px 45px rgba(28, 37, 33, 0.12);
+  --cream: #ffffff;
+  --line: #d4d4d4;
+  --muted: #5e5e5e;
+  --danger: var(--orange-dark);
+  --cream-muted: #f0f0f0;
+  --orange-soft: #ffd6c4;
+  --leaf-line: #555555;
+  --cream-soft: #d8d8d8;
+  --shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
 }
 
 .app-shell {
@@ -182,7 +182,7 @@ p {
 }
 .hero-panel p {
   max-width: 27rem;
-  color: #dce7da;
+  color: var(--cream-muted);
   font-size: 1rem;
 }
 .eyebrow {
@@ -194,13 +194,13 @@ p {
   margin-bottom: 0.75rem;
 }
 .hero-panel .eyebrow {
-  color: #ffb195;
+  color: var(--orange-soft);
 }
 .hero-stamp {
   position: absolute;
   left: 3rem;
   bottom: 2rem;
-  border: 1px solid #b8d4c1;
+  border: 1px solid var(--cream-soft);
   border-radius: 50%;
   width: 7rem;
   height: 7rem;
@@ -255,7 +255,7 @@ textarea {
   margin-top: 0.45rem;
   padding: 0.82rem 0.9rem;
   color: var(--ink);
-  background: #fffdf8;
+  background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 0.65rem;
   outline: 0;
@@ -267,7 +267,7 @@ textarea:focus,
 button:focus-visible,
 a:focus-visible {
   border-color: var(--leaf);
-  box-shadow: 0 0 0 3px #b7d1bf;
+  box-shadow: 0 0 0 3px var(--cream-soft);
   outline: 0;
 }
 textarea {
@@ -316,12 +316,12 @@ legend {
   border-color: var(--leaf);
 }
 .button-secondary:hover {
-  background: #e4f0e6;
+  background: var(--cream-muted);
 }
 .button-danger {
   color: var(--danger);
-  background: #fff1ed;
-  border-color: #d99482;
+  background: var(--orange-soft);
+  border-color: var(--orange);
 }
 .button-wide {
   width: 100%;
@@ -348,11 +348,11 @@ legend {
   border: 1px solid var(--line);
   border-radius: 0.65rem;
   cursor: pointer;
-  background: #fffdf8;
+  background: var(--paper);
 }
 .schedule-option.selected {
   border-color: var(--orange);
-  background: #fff0e8;
+  background: var(--orange-soft);
 }
 .schedule-option input {
   position: absolute;
@@ -376,7 +376,7 @@ legend {
 .fare-preview span,
 .fare-preview small {
   font-size: 0.68rem;
-  color: #c4dac9;
+  color: var(--cream-muted);
 }
 .fare-preview strong {
   font-family: "Fraunces", Georgia, serif;
@@ -405,17 +405,17 @@ legend {
 }
 .message-error {
   color: var(--danger);
-  background: #fff0ed;
-  border-color: #d99482;
+  background: var(--orange-soft);
+  border-color: var(--orange);
 }
 .message-success {
   color: var(--leaf-dark);
-  background: #e4f0e6;
-  border-color: #9fc3a5;
+  background: var(--cream-muted);
+  border-color: var(--line);
 }
 .message-info {
   color: var(--ink);
-  background: #f7f1e6;
+  background: var(--paper-deep);
   border-color: var(--line);
 }
 .trust-strip {
@@ -513,8 +513,8 @@ legend {
   align-items: center;
   width: fit-content;
   color: var(--leaf);
-  background: #e2efe4;
-  border: 1px solid #a8c6ad;
+  background: var(--cream-muted);
+  border: 1px solid var(--line);
   border-radius: 999px;
   padding: 0.3rem 0.55rem;
   font-size: 0.68rem;
@@ -536,14 +536,14 @@ legend {
   justify-content: space-between;
   padding: 0.7rem 0.85rem;
   color: var(--muted);
-  background: #f7f1e6;
+  background: var(--paper-deep);
   border-left: 3px solid var(--line);
   font-size: 0.72rem;
 }
 .timeline li.active {
   color: var(--leaf-dark);
   border-left-color: var(--orange);
-  background: #fff0e8;
+  background: var(--orange-soft);
 }
 .timeline span {
   font-size: 0.63rem;
@@ -622,7 +622,7 @@ legend {
   padding: 1rem;
   border: 1px solid var(--line);
   border-radius: 0.75rem;
-  background: #fffdf8;
+  background: var(--paper);
 }
 .booking-row-main {
   display: grid;
@@ -817,15 +817,20 @@ legend {
 
 .coming-brand-mark {
   display: grid;
-  width: 2.5rem;
+  width: 3.5rem;
   height: 2.5rem;
   place-items: center;
-  color: var(--ink);
-  background: var(--orange);
+  overflow: hidden;
+  background: var(--paper);
   border-radius: 0.75rem;
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 1.5rem;
-  font-weight: 700;
+}
+
+.coming-brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .coming-message {
@@ -856,6 +861,31 @@ legend {
   margin: 0 0 1.8rem;
   color: var(--cream-muted);
   font-size: 0.86rem;
+}
+
+.coming-scope {
+  max-width: 39ch;
+  margin: -0.8rem 0 1.2rem;
+  color: var(--paper);
+  font-size: 0.68rem;
+  line-height: 1.6;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  list-style: none;
+}
+
+.service-list li {
+  padding: 0.42rem 0.62rem;
+  color: var(--cream-muted);
+  border: 1px solid var(--leaf-line);
+  border-radius: 999px;
+  font-size: 0.61rem;
 }
 
 .coming-footnote {

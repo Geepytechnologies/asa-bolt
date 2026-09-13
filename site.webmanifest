@@ -1,6 +1,6 @@
 {
-  "name": "Asa Bolt · Eastern Nigeria rides",
-  "short_name": "Asa Bolt",
+  "name": "Asa Ride · Eastern Nigeria rides",
+  "short_name": "Asa Ride",
   "icons": [
     {
       "src": "/assets/icon-192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#174d3b",
-  "background_color": "#f4ead8",
+  "theme_color": "#f26b3b",
+  "background_color": "#ffffff",
   "display": "standalone"
 }

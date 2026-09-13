@@ -1,4 +1,5 @@
 import { type ReactElement } from "react";
+import logoUrl from "../assets/asa-express-mark.png";
 
 const whatsappUrl = "https://wa.me/2348105440033";
 
@@ -8,10 +9,10 @@ export function App(): ReactElement {
       <div className="coming-grid">
         <section className="coming-copy-panel" aria-labelledby="coming-title">
           <div className="coming-brand">
-            <span className="coming-brand-mark" aria-hidden="true">
-              A
+            <span className="coming-brand-mark">
+              <img src={logoUrl} alt="Asa Ride logo" />
             </span>
-            <span>Asa Bolt · Eastern Nigeria</span>
+            <span>Asa Ride · Eastern Nigeria</span>
           </div>
 
           <div className="coming-message">
@@ -25,6 +26,18 @@ export function App(): ReactElement {
               We are getting the booking experience ready for simpler trips across Eastern Nigeria.
               For a ride today, message us directly on WhatsApp.
             </p>
+            <p className="coming-scope">
+              One ride service for all five Eastern states: Abia, Anambra, Ebonyi, Enugu, and Imo.
+            </p>
+            <ul className="service-list" aria-label="Asa Ride services">
+              <li>Airport rides</li>
+              <li>Hotel rides</li>
+              <li>Event bookings</li>
+              <li>Intercity trips</li>
+              <li>Business rides</li>
+              <li>School runs</li>
+              <li>Errand rides</li>
+            </ul>
             <a href={whatsappUrl} className="whatsapp-link" target="_blank" rel="noreferrer">
               Book a ride on WhatsApp <span aria-hidden="true">↗</span>
             </a>
@@ -33,7 +46,7 @@ export function App(): ReactElement {
           <p className="coming-footnote">Street-smart rides, on your time.</p>
         </section>
 
-        <aside className="coming-visual" aria-label="Asa Bolt Eastern Nigeria ride service preview">
+        <aside className="coming-visual" aria-label="Asa Ride Eastern Nigeria ride service preview">
           <div className="service-preview">
             <div className="service-preview-header">
               <span>Ride service preview</span>
