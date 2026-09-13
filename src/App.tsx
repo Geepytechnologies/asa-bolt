@@ -1,4 +1,5 @@
 import { type ReactElement } from "react";
+import logoUrl from "../assets/asa-express-logo.png";
 
 const whatsappUrl = "https://wa.me/2348105440033";
 
@@ -34,7 +35,7 @@ export function App(): ReactElement {
         <aside className="coming-visual" aria-label="Asa Express brand">
           <div className="coming-image-frame">
             <img
-              src="/assets/asa-express-logo.png"
+              src={logoUrl}
               alt="Asa Express logo with a stylized winged delivery truck"
             />
           </div>
