@@ -1,5 +1,5 @@
 export const BRAND_CONFIG = {
-  name: "Asa Bolt",
+  name: "Asa Express",
   city: "Umuahia",
   timezone: "Africa/Lagos",
   currency: "NGN",
