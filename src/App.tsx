@@ -27,7 +27,7 @@ export function App(): ReactElement {
               For a ride today, message us directly on WhatsApp.
             </p>
             <p className="coming-scope">
-              One ride service for all five Eastern states: Abia, Anambra, Ebonyi, Enugu, and Imo.
+              One ride service connecting Abia, Anambra, Ebonyi, Enugu, Imo, Delta, and beyond.
             </p>
             <ul className="service-list" aria-label="Asa Ride services">
               <li>Airport rides</li>
@@ -43,7 +43,7 @@ export function App(): ReactElement {
             </a>
           </div>
 
-          <p className="coming-footnote">Street-smart rides, on your time.</p>
+          <p className="coming-footnote">Reliability in every mile</p>
         </section>
 
         <aside className="coming-visual" aria-label="Asa Ride Eastern Nigeria ride service preview">
@@ -59,6 +59,17 @@ export function App(): ReactElement {
               <span className="route-point route-point-end" />
               <span className="route-label route-label-start">Pickup</span>
               <span className="route-label route-label-end">Aba Road</span>
+              <span className="route-vehicle">
+                <svg viewBox="0 0 64 36" role="presentation">
+                  <path d="M13 24.5h38.5a4 4 0 0 0 3.8-5.3l-2.7-7.8a4 4 0 0 0-3.8-2.7H24.4a4 4 0 0 0-3.5 2.1L16.7 18H13a3.5 3.5 0 0 0 0 7Z" />
+                  <path d="m23 17 3.8-6h19.5l3.7 6H23Z" className="route-vehicle-window" />
+                  <circle cx="21" cy="26" r="4.2" className="route-vehicle-wheel" />
+                  <circle cx="48" cy="26" r="4.2" className="route-vehicle-wheel" />
+                  <circle cx="21" cy="26" r="1.4" className="route-vehicle-hub" />
+                  <circle cx="48" cy="26" r="1.4" className="route-vehicle-hub" />
+                  <path d="M54.5 18.5h2.2" className="route-vehicle-light" />
+                </svg>
+              </span>
             </div>
             <div className="route-details">
               <div>
