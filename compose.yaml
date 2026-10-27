@@ -1,0 +1,49 @@
+services:
+  app:
+    build: .
+    env_file: .env.production
+    environment:
+      NODE_ENV: production
+      ASA_BOLT_HOST: 0.0.0.0
+      ASA_BOLT_PORT: 8787
+      ASA_BOLT_STATIC_DIR: /app/dist
+      ASA_BOLT_DATABASE_PATH: /app/data/asa-bolt.sqlite
+      ASA_BOLT_BACKUP_DIR: /app/backups
+      ASA_BOLT_TRUST_PROXY: "1"
+    volumes:
+      - ride-data:/app/data
+      - ride-backups:/app/backups
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 20s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+  proxy:
+    image: caddy:2
+    environment:
+      ASA_BOLT_DOMAIN: ${ASA_BOLT_DOMAIN:?Set ASA_BOLT_DOMAIN in the Compose environment}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      app:
+        condition: service_healthy
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+volumes:
+  ride-data:
+  ride-backups:
+  caddy-data:
+  caddy-config:

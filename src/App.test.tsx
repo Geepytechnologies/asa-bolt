@@ -1,28 +1,60 @@
 /** @vitest-environment jsdom */
-import { render, screen } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { App } from "./App";
-
-describe("ride service landing page", () => {
-  it("renders the ride message and booking action", () => {
+vi.mock("./api", async (importOriginal) => {
+  const actual = await importOriginal<typeof import("./api")>();
+  return {
+    ...actual,
+    fetchCustomerSetup: vi.fn(async () => ({ locations: [], routes: [], availability: [] })),
+    fetchRequestHistory: vi.fn(async () => {
+      throw new Error("Verify your email");
+    }),
+  };
+});
+beforeEach(() => {
+  window.history.replaceState({}, "", "/");
+  localStorage.clear();
+  vi.spyOn(window, "scrollTo").mockImplementation(() => undefined);
+});
+afterEach(() => {
+  cleanup();
+  vi.restoreAllMocks();
+});
+describe("connected portals", () => {
+  it("shows email-first customer navigation and an honest unavailable-route state", async () => {
     render(<App />);
-
-    expect(screen.getByRole("heading", { name: /your city\. your ride/i })).toBeTruthy();
-    expect(screen.getByRole("img", { name: /asa ride logo/i })).toBeTruthy();
-    expect(screen.getByText("Eastern Nigeria", { exact: true })).toBeTruthy();
-    expect(screen.getByText("Reliability in every mile", { exact: true })).toBeTruthy();
-    expect(screen.getByText(/abia, anambra, ebonyi, enugu, imo, delta, and beyond/i)).toBeTruthy();
-    expect(screen.getByText("Airport rides", { exact: true })).toBeTruthy();
-    expect(screen.getByText("Hotel rides", { exact: true })).toBeTruthy();
-    expect(screen.getByText("Event bookings", { exact: true })).toBeTruthy();
-    expect(screen.getByText("Intercity trips", { exact: true })).toBeTruthy();
-    expect(screen.getByText("Business rides", { exact: true })).toBeTruthy();
-    expect(screen.getByText("School runs", { exact: true })).toBeTruthy();
-    expect(screen.getByText("Errand rides", { exact: true })).toBeTruthy();
-    expect(document.querySelector(".route-vehicle")).toBeTruthy();
-    expect(screen.getByRole("link", { name: /book a ride on whatsapp/i })).toHaveAttribute(
+    expect(
+      screen.getByRole("heading", { name: /move with local confidence/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "My requests", exact: true })).toHaveAttribute(
       "href",
-      "https://wa.me/2348105440033",
+      "/my-requests",
     );
+    expect(await screen.findByText(/no routes are published/i)).toBeInTheDocument();
+    expect(
+      screen.queryByRole("link", { name: /book a ride on whatsapp/i }),
+    ).not.toBeInTheDocument();
+  });
+  it("opens private admin sign-in through navigation and direct links", async () => {
+    render(<App />);
+    fireEvent.click(screen.getByRole("link", { name: "Admin portal", exact: true }));
+    expect(
+      await screen.findByRole("heading", { name: "Admin sign-in", exact: true }),
+    ).toBeInTheDocument();
+    expect(screen.getByLabelText("Password", { exact: true })).toHaveAttribute("type", "password");
+    expect(window.location.pathname).toBe("/admin");
+  });
+  it("requires an email verification link before showing request history", async () => {
+    window.history.replaceState({}, "", "/my-requests");
+    render(<App />);
+    expect(
+      await screen.findByRole("button", { name: "Email me a private link" }),
+    ).toBeInTheDocument();
+    expect(screen.getByLabelText("Email address", { exact: true })).toHaveAttribute(
+      "type",
+      "email",
+    );
+    expect(screen.queryByRole("article")).not.toBeInTheDocument();
   });
 });

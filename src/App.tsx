@@ -1,105 +1,155 @@
-import { type ReactElement } from "react";
+import { lazy, Suspense, useEffect, useRef, useSyncExternalStore, type MouseEvent } from "react";
+import { BRAND_CONFIG } from "../shared/config";
 import logoUrl from "../assets/asa-express-mark.png";
+import { BookingPage } from "./components/BookingPage";
+import { LocationRequestPage } from "./components/LocationRequestPage";
+import { StatusPage } from "./components/StatusPage";
+import { MyRequestsPage } from "./components/MyRequestsPage";
 
-const whatsappUrl = "https://wa.me/2348105440033";
+const OwnerDashboard = lazy(() =>
+  import("./components/OwnerDashboard").then((module) => ({ default: module.OwnerDashboard })),
+);
+const navigationEvent = "asa:navigate";
 
-export function App(): ReactElement {
+function subscribeToNavigation(onChange: () => void) {
+  window.addEventListener("popstate", onChange);
+  window.addEventListener(navigationEvent, onChange);
+  return () => {
+    window.removeEventListener("popstate", onChange);
+    window.removeEventListener(navigationEvent, onChange);
+  };
+}
+
+function currentPath() {
+  return window.location.pathname;
+}
+
+function navigate(path: string) {
+  if (path === window.location.pathname + window.location.search + window.location.hash) return;
+  window.history.pushState(null, "", path);
+  window.dispatchEvent(new Event(navigationEvent));
+}
+
+function handleLinkClick(event: MouseEvent<HTMLDivElement>) {
+  if (
+    event.defaultPrevented ||
+    event.button !== 0 ||
+    event.metaKey ||
+    event.ctrlKey ||
+    event.shiftKey ||
+    event.altKey
+  )
+    return;
+  const link = event.target instanceof Element ? event.target.closest("a") : null;
+  if (!link || link.target || link.hasAttribute("download")) return;
+  const url = new URL(link.href);
+  if (url.origin !== window.location.origin || url.hash) return;
+  event.preventDefault();
+  navigate(url.pathname + url.search);
+}
+
+type Route =
+  | { page: "booking" | "admin" | "location" | "history" | "missing" }
+  | { page: "status"; token: string };
+
+function resolveRoute(path: string): Route {
+  const normalized = path.replace(/\/+$/, "") || "/";
+  if (normalized === "/") return { page: "booking" };
+  if (normalized === "/admin" || normalized === "/owner") return { page: "admin" };
+  if (normalized === "/request-location") return { page: "location" };
+  if (normalized === "/my-requests") return { page: "history" };
+  const match = normalized.match(/^\/status\/([^/]+)$/);
+  if (match) {
+    try {
+      return { page: "status", token: decodeURIComponent(match[1]) };
+    } catch {
+      return { page: "missing" };
+    }
+  }
+  return { page: "missing" };
+}
+
+const pageTitles = {
+  booking: "Request a ride",
+  history: "My requests",
+  admin: "Admin portal",
+  location: "Request a location",
+  status: "Ride details",
+  missing: "Page not found",
+};
+
+export function App() {
+  const path = useSyncExternalStore(subscribeToNavigation, currentPath);
+  const route = resolveRoute(path);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    document.title = `${pageTitles[resolveRoute(path).page]} · ${BRAND_CONFIG.name}`;
+    contentRef.current?.focus({ preventScroll: true });
+    window.scrollTo(0, 0);
+  }, [path]);
+
   return (
-    <main className="coming-page">
-      <div className="coming-grid">
-        <section className="coming-copy-panel" aria-labelledby="coming-title">
-          <div className="coming-brand">
-            <span className="coming-brand-mark">
-              <img src={logoUrl} alt="Asa Ride logo" />
-            </span>
-            <span>Asa Ride · Eastern Nigeria</span>
-          </div>
-
-          <div className="coming-message">
-            <p className="coming-eyebrow">Eastern Nigeria</p>
-            <h1 id="coming-title">
-              Your city.
-              <br />
-              <em>Your ride.</em>
-            </h1>
-            <p className="coming-copy">
-              We are getting the booking experience ready for simpler trips across Eastern Nigeria.
-              For a ride today, message us directly on WhatsApp.
-            </p>
-            <p className="coming-scope">
-              One ride service connecting Abia, Anambra, Ebonyi, Enugu, Imo, Delta, and beyond.
-            </p>
-            <ul className="service-list" aria-label="Asa Ride services">
-              <li>Airport rides</li>
-              <li>Hotel rides</li>
-              <li>Event bookings</li>
-              <li>Intercity trips</li>
-              <li>Business rides</li>
-              <li>School runs</li>
-              <li>Errand rides</li>
-            </ul>
-            <a href={whatsappUrl} className="whatsapp-link" target="_blank" rel="noreferrer">
-              Book a ride on WhatsApp <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-
-          <p className="coming-footnote">Reliability in every mile</p>
-        </section>
-
-        <aside className="coming-visual" aria-label="Asa Ride Eastern Nigeria ride service preview">
-          <div className="service-preview">
-            <div className="service-preview-header">
-              <span>Ride service preview</span>
-              <span className="service-status">Opening soon</span>
-            </div>
-            <div className="route-map" aria-hidden="true">
-              <span className="route-line route-line-short" />
-              <span className="route-line route-line-long" />
-              <span className="route-point route-point-start" />
-              <span className="route-point route-point-end" />
-              <span className="route-label route-label-start">Pickup</span>
-              <span className="route-label route-label-end">Aba Road</span>
-              <span className="route-vehicle">
-                <svg viewBox="0 0 64 36" role="presentation">
-                  <path d="M13 24.5h38.5a4 4 0 0 0 3.8-5.3l-2.7-7.8a4 4 0 0 0-3.8-2.7H24.4a4 4 0 0 0-3.5 2.1L16.7 18H13a3.5 3.5 0 0 0 0 7Z" />
-                  <path d="m23 17 3.8-6h19.5l3.7 6H23Z" className="route-vehicle-window" />
-                  <circle cx="21" cy="26" r="4.2" className="route-vehicle-wheel" />
-                  <circle cx="48" cy="26" r="4.2" className="route-vehicle-wheel" />
-                  <circle cx="21" cy="26" r="1.4" className="route-vehicle-hub" />
-                  <circle cx="48" cy="26" r="1.4" className="route-vehicle-hub" />
-                  <path d="M54.5 18.5h2.2" className="route-vehicle-light" />
-                </svg>
-              </span>
-            </div>
-            <div className="route-details">
-              <div>
-                <span>From</span>
-                <strong>Where your day starts</strong>
-              </div>
-              <span className="route-arrow" aria-hidden="true">
-                →
-              </span>
-              <div>
-                <span>To</span>
-                <strong>Where you need to be</strong>
-              </div>
-            </div>
-            <div className="service-card">
-              <span className="service-card-icon" aria-hidden="true">
-                ✦
-              </span>
-              <div>
-                <strong>Everyday rides, made local</strong>
-                <span>Schedule a pickup that fits your day.</span>
-              </div>
-            </div>
-          </div>
-          <div className="coming-visual-caption">
-            <span>01 / EASTERN NIGERIA</span>
-            <p>Move with local confidence.</p>
-          </div>
-        </aside>
+    <div className="app-shell" onClick={handleLinkClick}>
+      <a className="skip-link" href="#page-content">
+        Skip to content
+      </a>
+      <header className="topbar">
+        <a className="brand-lockup" href="/" aria-label={`${BRAND_CONFIG.name} home`}>
+          <span className="brand-mark">
+            <img src={logoUrl} alt="" />
+          </span>
+          <span>
+            <strong>{BRAND_CONFIG.name}</strong>
+            <small>Eastern Nigeria rides</small>
+          </span>
+        </a>
+        <nav className="topnav" aria-label="Main navigation">
+          <a href="/" aria-current={route.page === "booking" ? "page" : undefined}>
+            Request a ride
+          </a>
+          <a href="/my-requests" aria-current={route.page === "history" ? "page" : undefined}>
+            My requests
+          </a>
+          <a href="/request-location" aria-current={route.page === "location" ? "page" : undefined}>
+            Request a location
+          </a>
+          <a href="/admin" aria-current={route.page === "admin" ? "page" : undefined}>
+            Admin portal
+          </a>
+        </nav>
+      </header>
+      <div id="page-content" ref={contentRef} tabIndex={-1}>
+        <Suspense
+          fallback={
+            <main className="narrow-page" aria-busy="true">
+              <p role="status">Loading admin portal…</p>
+            </main>
+          }
+        >
+          {route.page === "booking" && <BookingPage />}
+          {route.page === "admin" && <OwnerDashboard onNavigate={navigate} />}
+          {route.page === "location" && <LocationRequestPage onNavigate={navigate} />}
+          {route.page === "history" && <MyRequestsPage />}
+          {route.page === "status" && (
+            <StatusPage key={route.token} token={route.token} onNavigate={navigate} />
+          )}
+          {route.page === "missing" && (
+            <main className="narrow-page">
+              <div className="eyebrow">Page not found</div>
+              <h1>Let’s get you back.</h1>
+              <p>This page isn’t available. Check your private status link or return to booking.</p>
+              <a className="button button-primary" href="/">
+                Back to booking
+              </a>
+            </main>
+          )}
+        </Suspense>
       </div>
-    </main>
+      <footer className="site-footer">
+        <span>{BRAND_CONFIG.name} · Eastern Nigeria</span>
+        <span>Reliability in every mile</span>
+      </footer>
+    </div>
   );
 }

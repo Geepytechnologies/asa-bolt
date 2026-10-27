@@ -12,9 +12,7 @@ export function LocationRequestPage({ onNavigate }: LocationRequestPageProps) {
       </button>
       <div className="eyebrow">Expand the route map</div>
       <h1>Request a location</h1>
-      <p>
-        Tell the owner where you need to go. If approved, it will appear in the next booking flow.
-      </p>
+      <p>Tell the admin where you need to go. If approved, it will appear in the booking form.</p>
       <section className="request-panel standalone-request">
         <LocationRequestForm />
       </section>

@@ -1,5 +1,5 @@
 export const BRAND_CONFIG = {
-  name: "Asa Express",
+  name: "Asa Ride",
   city: "Umuahia",
   timezone: "Africa/Lagos",
   currency: "NGN",
@@ -7,6 +7,7 @@ export const BRAND_CONFIG = {
 
 export const BOOKING_STATUSES = [
   "requested",
+  "rejected",
   "confirmed",
   "picked_up",
   "arrived",

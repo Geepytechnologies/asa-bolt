@@ -6,3 +6,13 @@ data/*.sqlite
 data/*.sqlite-shm
 data/*.sqlite-wal
 .vercel
+
+.env.*
+!.env.example
+!.env.production.example
+backups/
+private-outbox/
+outputs/implementation-review/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

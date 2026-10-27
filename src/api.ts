@@ -1,22 +1,29 @@
 import type {
   AvailableSchedule,
   Booking,
+  ConflictReview,
   BookingAccessResponse,
   BookingCreationInput,
   FarePreview,
+  OfferPreview,
   FareRule,
   LocationRequest,
   OperatingSchedule,
   ScheduleException,
   ServiceLocation,
+  ServiceRoute,
+  RequestHistory,
 } from "../shared/contracts";
 
-const API_BASE = import.meta.env.VITE_API_URL ?? "http://127.0.0.1:8787/api";
+const API_BASE = import.meta.env.VITE_API_URL ?? "/api";
 
 export class ApiError extends Error {
   constructor(
     readonly status: number,
     message: string,
+    readonly fare?: FarePreview,
+    readonly offer?: OfferPreview,
+    readonly review?: ConflictReview,
   ) {
     super(message);
   }
@@ -64,32 +71,46 @@ export async function getFarePreview(
   return request<FarePreview>(`/fares/preview?${query.toString()}`);
 }
 
-export async function fetchFare(originId: string, destinationId: string): Promise<FarePreview> {
-  return getFarePreview(originId, destinationId, new Date().toISOString().slice(0, 10));
+export async function fetchFare(
+  originId: string,
+  destinationId: string,
+  date = nextDates(1)[0],
+): Promise<FarePreview> {
+  return getFarePreview(originId, destinationId, date);
 }
 
 export async function fetchCustomerSetup(): Promise<{
   locations: ServiceLocation[];
-  schedule: ScheduleSetup;
+  routes: Pick<ServiceRoute, "id" | "originId" | "destinationId">[];
+  availability: AvailableSchedule[];
 }> {
-  const locations = await getLocations();
   const dates = nextDates(8);
-  const availability = await Promise.all(dates.map((date) => getAvailability(date)));
-  const schedules = availability.flatMap((item) =>
-    item.windows.map((window) => ({
-      id: `${item.date}-${window.startTime}`,
-      dayOfWeek: new Date(`${item.date}T12:00:00Z`).getUTCDay(),
-      dayLabel: window.label,
-      startTime: window.startTime,
-      endTime: window.endTime,
-      active: item.available,
-    })),
-  );
+  const [locations, routes, availability] = await Promise.all([
+    getLocations(),
+    request<Pick<ServiceRoute, "id" | "originId" | "destinationId">[]>("/routes"),
+    Promise.all(dates.map((date) => getAvailability(date))),
+  ]);
   return {
     locations,
-    schedule: { schedules, exceptions: availability.flatMap((item) => item.exceptions) },
+    routes,
+    availability: availability
+      .filter((item) => item.available)
+      .flatMap((item) =>
+        item.windows.map((window) => ({
+          ...window,
+          label: new Date(`${item.date}T12:00:00Z`).toLocaleDateString("en-NG", {
+            weekday: "short",
+            day: "numeric",
+            month: "short",
+            timeZone: "Africa/Lagos",
+          }),
+        })),
+      ),
   };
 }
+
+export const previewPriceOffer = (amountNaira: string, signal?: AbortSignal) =>
+  request<OfferPreview>("/offers/preview", { method: "POST", body: { amountNaira }, signal });
 
 export async function createBooking(input: BookingCreationInput): Promise<BookingAccessResponse> {
   return request<BookingAccessResponse>("/bookings", { method: "POST", body: input });
@@ -103,12 +124,13 @@ export const fetchBookingStatus = getBooking;
 
 export async function cancelBooking(
   token: string,
-  phone: string,
+  contact: string,
   reason: string,
+  emailBased = false,
 ): Promise<{ booking: Booking }> {
   return request<{ booking: Booking }>(`/bookings/status/${encodeURIComponent(token)}/cancel`, {
     method: "POST",
-    body: { phone, reason },
+    body: { [emailBased ? "email" : "phone"]: contact, reason },
   });
 }
 
@@ -125,6 +147,13 @@ export async function createLocationRequest(input: {
 export const submitLocationRequest = createLocationRequest;
 
 export const apiFetch = request;
+
+export const requestHistoryLink = (email: string) =>
+  request<{ message: string }>("/history/link", { method: "POST", body: { email } });
+export const verifyHistoryLink = (token: string) =>
+  request<{ expiresAt: number }>("/history/verify", { method: "POST", body: { token } });
+export const fetchRequestHistory = () => request<RequestHistory>("/history");
+export const closeRequestHistory = () => request("/history/logout", { method: "POST" });
 
 export function buildAvailability(schedule: ScheduleSetup, days: number): AvailableSchedule[] {
   const result: AvailableSchedule[] = [];
@@ -251,20 +280,29 @@ async function request<T>(path: string, options: ApiOptions = {}): Promise<T> {
   const { body, ...requestOptions } = options;
   const response = await fetch(`${API_BASE}${path}`, {
     ...requestOptions,
+    credentials: "include",
+    cache: "no-store",
     headers: { "Content-Type": "application/json", ...(options.headers ?? {}) },
     body: body === undefined ? undefined : JSON.stringify(body),
   });
   const payload = await response.json().catch(() => ({}));
-  if (!response.ok) throw new ApiError(response.status, friendlyError(response.status, payload));
+  if (!response.ok)
+    throw new ApiError(
+      response.status,
+      friendlyError(response.status, payload),
+      payload.fare,
+      payload.offer,
+      payload.review,
+    );
   return payload as T;
 }
 
 function friendlyError(status: number, payload: unknown): string {
-  if (status === 401) return "Your owner session has ended. Sign in again to continue.";
-  if (status === 403) return "That phone number does not match the booking.";
+  if (isErrorPayload(payload)) return payload.error;
+  if (status === 401) return "Your private session has ended. Verify your access again.";
+  if (status === 403) return "The contact details do not match this request.";
   if (status === 404) return "We could not find that record. Refresh and try again.";
   if (status === 413) return "That request is too large. Shorten the notes and try again.";
-  if (isErrorPayload(payload)) return payload.error;
   return "We could not complete that request. Check the details and try again.";
 }
 
@@ -279,7 +317,13 @@ function isErrorPayload(value: unknown): value is { error: string } {
 
 function nextDates(count: number): string[] {
   const dates: string[] = [];
-  const today = new Date();
+  const localToday = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Africa/Lagos",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+  const today = new Date(`${localToday}T12:00:00Z`);
   for (let index = 0; index < count; index += 1) {
     const date = new Date(today);
     date.setDate(today.getDate() + index);

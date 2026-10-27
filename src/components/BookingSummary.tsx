@@ -1,6 +1,8 @@
 import type { Booking } from "../../shared/contracts";
-import { formatDateTime, formatNaira, statusLabel } from "../format";
+import { formatDateTime, statusLabel } from "../format";
+import { FareDetails } from "./FareDetails";
 import { Message } from "./Message";
+import { EmailDeliveryStatus } from "./EmailDeliveryStatus";
 
 interface BookingSummaryProps {
   booking: Booking;
@@ -11,10 +13,14 @@ interface BookingSummaryProps {
 export function BookingSummary({ booking, statusUrl, onNewBooking }: BookingSummaryProps) {
   return (
     <section className="confirmation-card" aria-labelledby="confirmation-title">
-      <div className="eyebrow">Booking secured</div>
-      <h2 id="confirmation-title">You are on the road.</h2>
+      <div className="eyebrow">Request received</div>
+      <h1 id="confirmation-title">
+        {booking.status === "requested" ? "Pending approval." : "Your request is saved."}
+      </h1>
       <Message tone="success">
-        Your ride was automatically confirmed because the selected time is available.
+        {booking.status === "requested"
+          ? "Your request is saved. Your ride is confirmed only after the admin accepts it. Unanswered requests are automatically rejected at pickup time."
+          : "Check the current decision in your request details."}
       </Message>
       <div className="reference">{booking.reference}</div>
       <dl className="detail-list">
@@ -24,10 +30,7 @@ export function BookingSummary({ booking, statusUrl, onNewBooking }: BookingSumm
             <span className="status-pill">{statusLabel(booking.status)}</span>
           </dd>
         </div>
-        <div>
-          <dt>Fare</dt>
-          <dd>{formatNaira(booking.fare.amountKobo)}</dd>
-        </div>
+        <FareDetails booking={booking} />
         <div>
           <dt>When</dt>
           <dd>{formatDateTime(booking.pickupAt)}</dd>
@@ -39,22 +42,23 @@ export function BookingSummary({ booking, statusUrl, onNewBooking }: BookingSumm
           </dd>
         </div>
         <div>
-          <dt>Notifications</dt>
+          <dt>Email updates</dt>
           <dd>
-            {booking.notificationStatus === "queued"
-              ? "Console adapter queued (local)"
-              : booking.notificationStatus}
+            <EmailDeliveryStatus booking={booking} />
           </dd>
         </div>
       </dl>
       <div className="action-row">
         <a className="button button-primary" href={statusUrl}>
-          View live status
+          View request details
         </a>
       </div>
       <button className="text-button" type="button" onClick={onNewBooking}>
-        Book another ride
+        Request another ride
       </button>
+      <p>
+        <a href="/my-requests">View all my requests by email</a>
+      </p>
     </section>
   );
 }

@@ -1,7 +1,7 @@
 import type { Booking, LocationRequest } from "../../../shared/contracts.js";
 import { BRAND_CONFIG } from "../../../shared/config.js";
 
-export type NotificationDeliveryStatus = "delivered" | "mocked" | "failed";
+export type NotificationDeliveryStatus = "delivered" | "mocked" | "failed" | "skipped" | "queued";
 
 export interface NotificationResult {
   channel: string;
@@ -10,6 +10,7 @@ export interface NotificationResult {
 
 export interface NotificationGateway {
   notifyBookingCreated(booking: Booking): Promise<NotificationResult[]>;
+  notifyBookingRescheduled?(booking: Booking): Promise<NotificationResult[]>;
   notifyStatusChanged(booking: Booking): Promise<NotificationResult[]>;
   notifyLocationRequestReviewed(request: LocationRequest): Promise<NotificationResult[]>;
 }
@@ -35,7 +36,7 @@ class ConsoleDeliveryAdapter implements NotificationAdapter {
   }
 
   notifyLocationRequestReviewed(request: LocationRequest): Promise<NotificationResult> {
-    console.info(`[notification:mock] location ${request.locationName} is ${request.status}`);
+    console.info(`[notification:mock] location request ${request.id} is ${request.status}`);
     return Promise.resolve({ channel: this.channel, status: "mocked" });
   }
 }
@@ -64,11 +65,21 @@ export class WebhookNotificationAdapter implements NotificationAdapter {
   ) {}
 
   notifyBookingCreated(booking: Booking): Promise<NotificationResult> {
+    if (this.channel === "whatsapp" && !booking.phone)
+      return Promise.resolve({ channel: this.channel, status: "skipped" });
     return this.deliver("booking.created", booking);
   }
 
   notifyStatusChanged(booking: Booking): Promise<NotificationResult> {
+    if (this.channel === "whatsapp" && !booking.phone)
+      return Promise.resolve({ channel: this.channel, status: "skipped" });
     return this.deliver("booking.status_changed", booking);
+  }
+
+  notifyBookingRescheduled(booking: Booking): Promise<NotificationResult> {
+    if (this.channel === "whatsapp" && !booking.phone)
+      return Promise.resolve({ channel: this.channel, status: "skipped" });
+    return this.deliver("booking.rescheduled", booking);
   }
 
   notifyLocationRequestReviewed(request: LocationRequest): Promise<NotificationResult> {
@@ -98,14 +109,33 @@ export class WebhookNotificationAdapter implements NotificationAdapter {
 }
 
 class CompositeNotificationGateway implements NotificationGateway {
-  constructor(private readonly adapters: NotificationAdapter[]) {}
+  constructor(
+    private readonly adapters: NotificationAdapter[],
+    private readonly separateBookingEmail = false,
+  ) {}
 
   notifyBookingCreated(booking: Booking): Promise<NotificationResult[]> {
-    return this.notify((adapter) => adapter.notifyBookingCreated(booking));
+    return this.notify(
+      (adapter) => adapter.notifyBookingCreated(booking),
+      this.separateBookingEmail,
+    );
   }
 
   notifyStatusChanged(booking: Booking): Promise<NotificationResult[]> {
-    return this.notify((adapter) => adapter.notifyStatusChanged(booking));
+    return this.notify(
+      (adapter) => adapter.notifyStatusChanged(booking),
+      this.separateBookingEmail,
+    );
+  }
+
+  notifyBookingRescheduled(booking: Booking): Promise<NotificationResult[]> {
+    return this.notify(
+      (adapter) =>
+        adapter instanceof WebhookNotificationAdapter
+          ? adapter.notifyBookingRescheduled(booking)
+          : adapter.notifyStatusChanged(booking),
+      this.separateBookingEmail,
+    );
   }
 
   notifyLocationRequestReviewed(request: LocationRequest): Promise<NotificationResult[]> {
@@ -114,18 +144,24 @@ class CompositeNotificationGateway implements NotificationGateway {
 
   private async notify(
     send: (adapter: NotificationAdapter) => Promise<NotificationResult>,
+    skipEmail = false,
   ): Promise<NotificationResult[]> {
-    const attempts = await Promise.allSettled(this.adapters.map(send));
-    return attempts.map((attempt, index) =>
-      failureSafeResult(attempt, this.adapters[index].channel),
-    );
+    const adapters = this.adapters.filter((adapter) => !skipEmail || adapter.channel !== "email");
+    const attempts = await Promise.allSettled(adapters.map(send));
+    return attempts.map((attempt, index) => failureSafeResult(attempt, adapters[index].channel));
   }
 }
 
-export function createNotificationGateway(env: NodeJS.ProcessEnv): NotificationGateway {
-  const adapters = configuredAdapters(env);
+export function createNotificationGateway(
+  env: NodeJS.ProcessEnv,
+  options: { separateBookingEmail?: boolean } = {},
+): NotificationGateway {
+  const adapters = configuredAdapters(env).filter(
+    (adapter) => !options.separateBookingEmail || adapter.channel !== "whatsapp",
+  );
   return new CompositeNotificationGateway(
     adapters.length > 0 ? adapters : [new ConsoleDeliveryAdapter()],
+    options.separateBookingEmail,
   );
 }
 
@@ -152,6 +188,6 @@ function failureSafeResult(
   channel: string,
 ): NotificationResult {
   if (attempt.status === "fulfilled") return attempt.value;
-  console.error(`[notification:${channel}] delivery failed`, attempt.reason);
+  console.error(`[notification:${channel}] delivery failed`);
   return { channel, status: "failed" };
 }

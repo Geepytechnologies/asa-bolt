@@ -1,0 +1,13 @@
+.git
+node_modules
+dist
+coverage
+.env
+.env.*
+data
+backups
+private-outbox
+outputs
+*.sqlite*
+**/*.test.*
+.DS_Store

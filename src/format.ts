@@ -1,3 +1,5 @@
+export { hasAcceptedFare, agreedFareAmount } from "../shared/booking-pricing";
+
 export function formatNaira(amountKobo: number): string {
   return new Intl.NumberFormat("en-NG", {
     style: "currency",
@@ -15,5 +17,7 @@ export function formatDateTime(value: string): string {
 }
 
 export function statusLabel(status: string): string {
+  if (status === "requested") return "Pending approval";
+  if (status === "confirmed") return "Accepted";
   return status.replace("_", " ").replace(/^\w/, (letter) => letter.toUpperCase());
 }

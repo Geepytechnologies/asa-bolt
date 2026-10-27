@@ -1,0 +1,3922 @@
+{
+  "id": "abia-google-maps-2026-09-14",
+  "workbook": "outputs/abia_google_maps_distance_matrix/abia_google_maps_distance_matrix.xlsx",
+  "sha256": "b35f0cb00b59ce33e04f7c877528be21cfbb757a0d4d937770e2d70765663ffb",
+  "collectionDate": "2026-09-14",
+  "reference": {
+    "baseFareNaira": "10000",
+    "baseDistanceKm": "9.8",
+    "suggestedRatePerKm": "1020.408163265306",
+    "approved": false
+  },
+  "locations": [
+    {
+      "researchId": "AB-01",
+      "category": "LGA hub",
+      "area": "Aba North / Aba South",
+      "name": "Aba",
+      "mapsQuery": "Aba, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Aba%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 3
+    },
+    {
+      "researchId": "AB-02",
+      "category": "LGA hub",
+      "area": "Arochukwu",
+      "name": "Arochukwu",
+      "mapsQuery": "Arochukwu, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Arochukwu%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 4
+    },
+    {
+      "researchId": "AB-03",
+      "category": "LGA hub",
+      "area": "Bende",
+      "name": "Bende",
+      "mapsQuery": "Bende, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Bende%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 5
+    },
+    {
+      "researchId": "AB-04",
+      "category": "LGA hub",
+      "area": "Ikwuano",
+      "name": "Isiala Oboro",
+      "mapsQuery": "Isiala Oboro, Ikwuano, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 6
+    },
+    {
+      "researchId": "AB-05",
+      "category": "LGA hub",
+      "area": "Isiala Ngwa North",
+      "name": "Okpuala Ngwa",
+      "mapsQuery": "Okpuala Ngwa, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 7
+    },
+    {
+      "researchId": "AB-06",
+      "category": "LGA hub",
+      "area": "Isiala Ngwa South",
+      "name": "Omoba",
+      "mapsQuery": "Omoba, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Omoba%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 8
+    },
+    {
+      "researchId": "AB-07",
+      "category": "LGA hub",
+      "area": "Isuikwuato",
+      "name": "Mbalano",
+      "mapsQuery": "Mbalano, Isuikwuato, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 9
+    },
+    {
+      "researchId": "AB-08",
+      "category": "LGA hub",
+      "area": "Obingwa",
+      "name": "Mgboko",
+      "mapsQuery": "Mgboko, Obingwa, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 10
+    },
+    {
+      "researchId": "AB-09",
+      "category": "LGA hub",
+      "area": "Ohafia",
+      "name": "Ebem Ohafia",
+      "mapsQuery": "Ebem Ohafia, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Ebem%20Ohafia%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 11
+    },
+    {
+      "researchId": "AB-10",
+      "category": "LGA hub",
+      "area": "Osisioma",
+      "name": "Osisioma",
+      "mapsQuery": "Osisioma, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Osisioma%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 12
+    },
+    {
+      "researchId": "AB-11",
+      "category": "LGA hub",
+      "area": "Ugwunagbo",
+      "name": "Osusuaku",
+      "mapsQuery": "Osusuaku, Ugwunagbo, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 13
+    },
+    {
+      "researchId": "AB-12",
+      "category": "LGA hub",
+      "area": "Ukwa East",
+      "name": "Akwete",
+      "mapsQuery": "Akwete, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Akwete%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 14
+    },
+    {
+      "researchId": "AB-13",
+      "category": "LGA hub",
+      "area": "Ukwa West",
+      "name": "Okeikpe",
+      "mapsQuery": "Okeikpe, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Okeikpe%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 15
+    },
+    {
+      "researchId": "AB-15",
+      "category": "LGA hub",
+      "area": "Umunneochi",
+      "name": "Nkwoagu",
+      "mapsQuery": "Nkwoagu, Umunneochi, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 16
+    },
+    {
+      "researchId": "UM-01",
+      "category": "Street",
+      "area": "Umuahia North",
+      "name": "School Road",
+      "mapsQuery": "School Road, Umuahia, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 17
+    },
+    {
+      "researchId": "UM-02",
+      "category": "Street",
+      "area": "Umuahia North",
+      "name": "Azikiwe Road",
+      "mapsQuery": "Azikiwe Road, Umuahia, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 18
+    },
+    {
+      "researchId": "UM-03",
+      "category": "Street",
+      "area": "Umuahia North",
+      "name": "Aba Road",
+      "mapsQuery": "Aba Road, Umuahia, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 19
+    },
+    {
+      "researchId": "UM-04",
+      "category": "Street",
+      "area": "Umuahia North",
+      "name": "Bende Road",
+      "mapsQuery": "Bende Road, Umuahia, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 20
+    },
+    {
+      "researchId": "UM-06",
+      "category": "Street",
+      "area": "Umuahia North",
+      "name": "Market Road",
+      "mapsQuery": "Market Road, Umuahia, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 21
+    },
+    {
+      "researchId": "UM-07",
+      "category": "Street",
+      "area": "Umuahia North",
+      "name": "Bank Road",
+      "mapsQuery": "Bank Road, Umuahia, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 22
+    },
+    {
+      "researchId": "UM-08",
+      "category": "Street",
+      "area": "Umuahia North",
+      "name": "Ossah Road",
+      "mapsQuery": "Ossah Road, Umuahia, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 23
+    },
+    {
+      "researchId": "UM-09",
+      "category": "Street",
+      "area": "Umuahia North",
+      "name": "Amuzukwu Road",
+      "mapsQuery": "Amuzukwu Road, Umuahia, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 24
+    },
+    {
+      "researchId": "UM-10",
+      "category": "Area",
+      "area": "Ikwuano",
+      "name": "Umudike",
+      "mapsQuery": "Umudike, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 25
+    },
+    {
+      "researchId": "LM-01",
+      "category": "Landmark",
+      "area": "Umuahia North",
+      "name": "Umuahia Central Park",
+      "mapsQuery": "Umuahia Central Park, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 26
+    },
+    {
+      "researchId": "LM-02",
+      "category": "Landmark",
+      "area": "Umuahia North",
+      "name": "Umuahia Tower",
+      "mapsQuery": "Umuahia Tower, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 27
+    },
+    {
+      "researchId": "LM-05",
+      "category": "Landmark",
+      "area": "Umuahia North",
+      "name": "Federal Medical Centre Umuahia",
+      "mapsQuery": "Federal Medical Centre Umuahia, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 28
+    },
+    {
+      "researchId": "LM-07",
+      "category": "Landmark",
+      "area": "Umuahia South",
+      "name": "National War Museum",
+      "mapsQuery": "National War Museum Umuahia, Abia, Nigeria",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceRow": 29
+    }
+  ],
+  "routes": [
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "AB-02",
+      "distanceKm": "86.8",
+      "pairKey": "Aba|Arochukwu",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Arochukwu%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 2
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "AB-04",
+      "distanceKm": "61.1",
+      "pairKey": "Aba|Isiala Oboro",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 3
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "AB-05",
+      "distanceKm": "49.3",
+      "pairKey": "Aba|Okpuala Ngwa",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 4
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "AB-07",
+      "distanceKm": "87.7",
+      "pairKey": "Aba|Mbalano",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 5
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "AB-10",
+      "distanceKm": "13.5",
+      "pairKey": "Aba|Osisioma",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Osisioma%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 6
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "AB-11",
+      "distanceKm": "13",
+      "pairKey": "Aba|Osusuaku",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 7
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "AB-13",
+      "distanceKm": "27.1",
+      "pairKey": "Aba|Okeikpe",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Okeikpe%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 8
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "AB-15",
+      "distanceKm": "115",
+      "pairKey": "Aba|Nkwoagu",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 9
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "60.9",
+      "pairKey": "Aba|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 10
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "30.6",
+      "pairKey": "Aba|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 11
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "59.1",
+      "pairKey": "Aba|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 12
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "60.3",
+      "pairKey": "Aba|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 13
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "59.3",
+      "pairKey": "Aba|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 14
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "61.2",
+      "pairKey": "Aba|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 15
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "55.2",
+      "pairKey": "Aba|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 16
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "60.1",
+      "pairKey": "Aba|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 17
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "AB-03",
+      "distanceKm": "48.6",
+      "pairKey": "Arochukwu|Bende",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Bende%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 18
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "AB-04",
+      "distanceKm": "53.6",
+      "pairKey": "Arochukwu|Isiala Oboro",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 19
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "AB-05",
+      "distanceKm": "65.1",
+      "pairKey": "Arochukwu|Okpuala Ngwa",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 20
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "AB-07",
+      "distanceKm": "92.2",
+      "pairKey": "Arochukwu|Mbalano",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 21
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "AB-09",
+      "distanceKm": "46",
+      "pairKey": "Arochukwu|Ebem Ohafia",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 22
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "AB-11",
+      "distanceKm": "96.2",
+      "pairKey": "Arochukwu|Osusuaku",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 23
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "AB-12",
+      "distanceKm": "116",
+      "pairKey": "Arochukwu|Akwete",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Akwete%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 24
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "AB-15",
+      "distanceKm": "132",
+      "pairKey": "Arochukwu|Nkwoagu",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 25
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "66.6",
+      "pairKey": "Arochukwu|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 26
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "56.8",
+      "pairKey": "Arochukwu|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 27
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "67.9",
+      "pairKey": "Arochukwu|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 28
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "67.3",
+      "pairKey": "Arochukwu|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 29
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "66.9",
+      "pairKey": "Arochukwu|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 30
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "66.4",
+      "pairKey": "Arochukwu|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 31
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "67.1",
+      "pairKey": "Arochukwu|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 32
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "68.2",
+      "pairKey": "Arochukwu|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 33
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "AB-06",
+      "distanceKm": "62.5",
+      "pairKey": "Bende|Omoba",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Omoba%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 34
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "AB-07",
+      "distanceKm": "35.3",
+      "pairKey": "Bende|Mbalano",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 35
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "AB-08",
+      "distanceKm": "66.5",
+      "pairKey": "Bende|Mgboko",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 36
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "AB-11",
+      "distanceKm": "86.9",
+      "pairKey": "Bende|Osusuaku",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 37
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "AB-12",
+      "distanceKm": "110",
+      "pairKey": "Bende|Akwete",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Akwete%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 38
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "AB-13",
+      "distanceKm": "99.6",
+      "pairKey": "Bende|Okeikpe",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Okeikpe%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 39
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "18.3",
+      "pairKey": "Bende|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 40
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "46",
+      "pairKey": "Bende|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 41
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "14.6",
+      "pairKey": "Bende|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 42
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "19.9",
+      "pairKey": "Bende|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 43
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "19.3",
+      "pairKey": "Bende|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 44
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "18.8",
+      "pairKey": "Bende|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 45
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "18.2",
+      "pairKey": "Bende|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 46
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "21.7",
+      "pairKey": "Bende|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 47
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "18.4",
+      "pairKey": "Bende|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 48
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "24",
+      "pairKey": "Bende|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 49
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "19.2",
+      "pairKey": "Bende|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 50
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "19.9",
+      "pairKey": "Bende|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 51
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "AB-05",
+      "distanceKm": "26.9",
+      "pairKey": "Isiala Oboro|Okpuala Ngwa",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 52
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "AB-09",
+      "distanceKm": "52.8",
+      "pairKey": "Isiala Oboro|Ebem Ohafia",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 53
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "AB-11",
+      "distanceKm": "73.5",
+      "pairKey": "Isiala Oboro|Osusuaku",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 54
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "AB-12",
+      "distanceKm": "107",
+      "pairKey": "Isiala Oboro|Akwete",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Akwete%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 55
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "AB-13",
+      "distanceKm": "101",
+      "pairKey": "Isiala Oboro|Okeikpe",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Okeikpe%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 56
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "AB-15",
+      "distanceKm": "84.8",
+      "pairKey": "Isiala Oboro|Nkwoagu",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 57
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "20.2",
+      "pairKey": "Isiala Oboro|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 58
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "20.6",
+      "pairKey": "Isiala Oboro|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 59
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "19.7",
+      "pairKey": "Isiala Oboro|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 60
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "21.2",
+      "pairKey": "Isiala Oboro|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 61
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "20.6",
+      "pairKey": "Isiala Oboro|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 62
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "22.9",
+      "pairKey": "Isiala Oboro|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 63
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "11.7",
+      "pairKey": "Isiala Oboro|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 64
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "22.5",
+      "pairKey": "Isiala Oboro|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 65
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "25.2",
+      "pairKey": "Isiala Oboro|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 66
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "24",
+      "pairKey": "Isiala Oboro|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 67
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "AB-06",
+      "distanceKm": "22.5",
+      "pairKey": "Okpuala Ngwa|Omoba",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Omoba%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 68
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "AB-08",
+      "distanceKm": "30.4",
+      "pairKey": "Okpuala Ngwa|Mgboko",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 69
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "AB-10",
+      "distanceKm": "37.4",
+      "pairKey": "Okpuala Ngwa|Osisioma",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Osisioma%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 70
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "28.5",
+      "pairKey": "Okpuala Ngwa|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 71
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "28.7",
+      "pairKey": "Okpuala Ngwa|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 72
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "11.4",
+      "pairKey": "Okpuala Ngwa|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 73
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "32.2",
+      "pairKey": "Okpuala Ngwa|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 74
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "26.9",
+      "pairKey": "Okpuala Ngwa|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 75
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "28",
+      "pairKey": "Okpuala Ngwa|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 76
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "27.1",
+      "pairKey": "Okpuala Ngwa|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 77
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "28.3",
+      "pairKey": "Okpuala Ngwa|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 78
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "27",
+      "pairKey": "Okpuala Ngwa|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 79
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "27.2",
+      "pairKey": "Okpuala Ngwa|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 80
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "23",
+      "pairKey": "Okpuala Ngwa|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 81
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "27.8",
+      "pairKey": "Okpuala Ngwa|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 82
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "28.8",
+      "pairKey": "Okpuala Ngwa|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 83
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "AB-08",
+      "distanceKm": "13.7",
+      "pairKey": "Omoba|Mgboko",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 84
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "AB-10",
+      "distanceKm": "13.2",
+      "pairKey": "Omoba|Osisioma",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Osisioma%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 85
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "AB-12",
+      "distanceKm": "59.7",
+      "pairKey": "Omoba|Akwete",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Akwete%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 86
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "AB-15",
+      "distanceKm": "97.8",
+      "pairKey": "Omoba|Nkwoagu",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 87
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "43.8",
+      "pairKey": "Omoba|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 88
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "43.9",
+      "pairKey": "Omoba|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 89
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "13.9",
+      "pairKey": "Omoba|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 90
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "47.5",
+      "pairKey": "Omoba|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 91
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "42.1",
+      "pairKey": "Omoba|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 92
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "43.3",
+      "pairKey": "Omoba|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 93
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "42.3",
+      "pairKey": "Omoba|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 94
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "43.6",
+      "pairKey": "Omoba|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 95
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "44.2",
+      "pairKey": "Omoba|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 96
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "42.5",
+      "pairKey": "Omoba|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 97
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "38.2",
+      "pairKey": "Omoba|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 98
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "43.1",
+      "pairKey": "Omoba|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 99
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "44",
+      "pairKey": "Omoba|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 100
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "AB-10",
+      "distanceKm": "75.6",
+      "pairKey": "Mbalano|Osisioma",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Osisioma%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 101
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "AB-11",
+      "distanceKm": "94.6",
+      "pairKey": "Mbalano|Osusuaku",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 102
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "AB-12",
+      "distanceKm": "118",
+      "pairKey": "Mbalano|Akwete",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Akwete%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 103
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "AB-13",
+      "distanceKm": "108",
+      "pairKey": "Mbalano|Okeikpe",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Okeikpe%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 104
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "38.2",
+      "pairKey": "Mbalano|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 105
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "38.3",
+      "pairKey": "Mbalano|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 106
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "64.3",
+      "pairKey": "Mbalano|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 107
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "39.8",
+      "pairKey": "Mbalano|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 108
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "36.5",
+      "pairKey": "Mbalano|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 109
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "37.3",
+      "pairKey": "Mbalano|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 110
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "35.7",
+      "pairKey": "Mbalano|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 111
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "46.6",
+      "pairKey": "Mbalano|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 112
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "37.5",
+      "pairKey": "Mbalano|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 113
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "35.4",
+      "pairKey": "Mbalano|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 114
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "AB-09",
+      "distanceKm": "92.1",
+      "pairKey": "Mgboko|Ebem Ohafia",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 115
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "AB-11",
+      "distanceKm": "23.6",
+      "pairKey": "Mgboko|Osusuaku",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 116
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "AB-12",
+      "distanceKm": "48.6",
+      "pairKey": "Mgboko|Akwete",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Akwete%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 117
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "AB-15",
+      "distanceKm": "111",
+      "pairKey": "Mgboko|Nkwoagu",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 118
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "48.4",
+      "pairKey": "Mgboko|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 119
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "48.3",
+      "pairKey": "Mgboko|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 120
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "19",
+      "pairKey": "Mgboko|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 121
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "55.9",
+      "pairKey": "Mgboko|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 122
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "51.8",
+      "pairKey": "Mgboko|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 123
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "57.6",
+      "pairKey": "Mgboko|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 124
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "AB-10",
+      "distanceKm": "92.8",
+      "pairKey": "Ebem Ohafia|Osisioma",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Osisioma%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 125
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "AB-11",
+      "distanceKm": "113",
+      "pairKey": "Ebem Ohafia|Osusuaku",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 126
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "AB-12",
+      "distanceKm": "133",
+      "pairKey": "Ebem Ohafia|Akwete",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Akwete%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 127
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "AB-13",
+      "distanceKm": "125",
+      "pairKey": "Ebem Ohafia|Okeikpe",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Okeikpe%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 128
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "AB-15",
+      "distanceKm": "90.8",
+      "pairKey": "Ebem Ohafia|Nkwoagu",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 129
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "44",
+      "pairKey": "Ebem Ohafia|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 130
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "71.7",
+      "pairKey": "Ebem Ohafia|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 131
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "40.2",
+      "pairKey": "Ebem Ohafia|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 132
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "45.6",
+      "pairKey": "Ebem Ohafia|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 133
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "44.5",
+      "pairKey": "Ebem Ohafia|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 134
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "43.9",
+      "pairKey": "Ebem Ohafia|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 135
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "47.3",
+      "pairKey": "Ebem Ohafia|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 136
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "44.1",
+      "pairKey": "Ebem Ohafia|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 137
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "49.6",
+      "pairKey": "Ebem Ohafia|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 138
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "44.8",
+      "pairKey": "Ebem Ohafia|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 139
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "45.5",
+      "pairKey": "Ebem Ohafia|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 140
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "AB-11",
+      "distanceKm": "20.5",
+      "pairKey": "Osisioma|Osusuaku",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 141
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "AB-12",
+      "distanceKm": "44.5",
+      "pairKey": "Osisioma|Akwete",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Akwete%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 142
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "AB-13",
+      "distanceKm": "34",
+      "pairKey": "Osisioma|Okeikpe",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Okeikpe%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 143
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "AB-15",
+      "distanceKm": "102",
+      "pairKey": "Osisioma|Nkwoagu",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 144
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "47.9",
+      "pairKey": "Osisioma|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 145
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "48",
+      "pairKey": "Osisioma|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 146
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "36.6",
+      "pairKey": "Osisioma|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 147
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "51.6",
+      "pairKey": "Osisioma|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 148
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "46.2",
+      "pairKey": "Osisioma|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 149
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "47.4",
+      "pairKey": "Osisioma|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 150
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "46.4",
+      "pairKey": "Osisioma|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 151
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "47.7",
+      "pairKey": "Osisioma|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 152
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "48.3",
+      "pairKey": "Osisioma|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 153
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "46.6",
+      "pairKey": "Osisioma|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 154
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "42.3",
+      "pairKey": "Osisioma|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 155
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "47.2",
+      "pairKey": "Osisioma|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 156
+    },
+    {
+      "originResearchId": "AB-10",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "48.1",
+      "pairKey": "Osisioma|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Osisioma%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 157
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "AB-12",
+      "distanceKm": "19.9",
+      "pairKey": "Osusuaku|Akwete",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Akwete%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 158
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "AB-13",
+      "distanceKm": "18.8",
+      "pairKey": "Osusuaku|Okeikpe",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Okeikpe%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 159
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "AB-15",
+      "distanceKm": "123",
+      "pairKey": "Osusuaku|Nkwoagu",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 160
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "69.3",
+      "pairKey": "Osusuaku|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 161
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "69.2",
+      "pairKey": "Osusuaku|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 162
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "44.1",
+      "pairKey": "Osusuaku|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 163
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "72.8",
+      "pairKey": "Osusuaku|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 164
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "67.4",
+      "pairKey": "Osusuaku|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 165
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "68.6",
+      "pairKey": "Osusuaku|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 166
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "67.6",
+      "pairKey": "Osusuaku|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 167
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "68.9",
+      "pairKey": "Osusuaku|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 168
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "69.5",
+      "pairKey": "Osusuaku|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 169
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "67.8",
+      "pairKey": "Osusuaku|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 170
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "63.5",
+      "pairKey": "Osusuaku|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 171
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "68.4",
+      "pairKey": "Osusuaku|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 172
+    },
+    {
+      "originResearchId": "AB-11",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "69.3",
+      "pairKey": "Osusuaku|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 173
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "AB-13",
+      "distanceKm": "19.7",
+      "pairKey": "Akwete|Okeikpe",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/Okeikpe%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 174
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "AB-15",
+      "distanceKm": "146",
+      "pairKey": "Akwete|Nkwoagu",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 175
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "91.9",
+      "pairKey": "Akwete|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 176
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "91.8",
+      "pairKey": "Akwete|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 177
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "67.6",
+      "pairKey": "Akwete|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 178
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "95.4",
+      "pairKey": "Akwete|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 179
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "90",
+      "pairKey": "Akwete|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 180
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "91.2",
+      "pairKey": "Akwete|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 181
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "90.2",
+      "pairKey": "Akwete|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 182
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "91.5",
+      "pairKey": "Akwete|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 183
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "92",
+      "pairKey": "Akwete|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 184
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "90.4",
+      "pairKey": "Akwete|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 185
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "86.1",
+      "pairKey": "Akwete|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 186
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "91",
+      "pairKey": "Akwete|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 187
+    },
+    {
+      "originResearchId": "AB-12",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "91.9",
+      "pairKey": "Akwete|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Akwete%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 188
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "AB-15",
+      "distanceKm": "135",
+      "pairKey": "Okeikpe|Nkwoagu",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 189
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "81.5",
+      "pairKey": "Okeikpe|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 190
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "81.4",
+      "pairKey": "Okeikpe|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 191
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "56.3",
+      "pairKey": "Okeikpe|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 192
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "85",
+      "pairKey": "Okeikpe|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 193
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "79.6",
+      "pairKey": "Okeikpe|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 194
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "80.8",
+      "pairKey": "Okeikpe|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 195
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "79.8",
+      "pairKey": "Okeikpe|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 196
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "81.1",
+      "pairKey": "Okeikpe|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 197
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "81.7",
+      "pairKey": "Okeikpe|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 198
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "80",
+      "pairKey": "Okeikpe|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 199
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "75.7",
+      "pairKey": "Okeikpe|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 200
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "80.6",
+      "pairKey": "Okeikpe|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 201
+    },
+    {
+      "originResearchId": "AB-13",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "81.5",
+      "pairKey": "Okeikpe|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Okeikpe%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 202
+    },
+    {
+      "originResearchId": "AB-15",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "65.3",
+      "pairKey": "Nkwoagu|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 203
+    },
+    {
+      "originResearchId": "AB-15",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "65.3",
+      "pairKey": "Nkwoagu|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 204
+    },
+    {
+      "originResearchId": "AB-15",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "92.8",
+      "pairKey": "Nkwoagu|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 205
+    },
+    {
+      "originResearchId": "AB-15",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "68.9",
+      "pairKey": "Nkwoagu|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 206
+    },
+    {
+      "originResearchId": "AB-15",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "63.5",
+      "pairKey": "Nkwoagu|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 207
+    },
+    {
+      "originResearchId": "AB-15",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "64.7",
+      "pairKey": "Nkwoagu|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 208
+    },
+    {
+      "originResearchId": "AB-15",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "63.7",
+      "pairKey": "Nkwoagu|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 209
+    },
+    {
+      "originResearchId": "AB-15",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "64.9",
+      "pairKey": "Nkwoagu|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 210
+    },
+    {
+      "originResearchId": "AB-15",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "73.5",
+      "pairKey": "Nkwoagu|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 211
+    },
+    {
+      "originResearchId": "AB-15",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "63.9",
+      "pairKey": "Nkwoagu|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 212
+    },
+    {
+      "originResearchId": "AB-15",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "59.6",
+      "pairKey": "Nkwoagu|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 213
+    },
+    {
+      "originResearchId": "AB-15",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "64.4",
+      "pairKey": "Nkwoagu|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 214
+    },
+    {
+      "originResearchId": "AB-15",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "65.4",
+      "pairKey": "Nkwoagu|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 215
+    },
+    {
+      "originResearchId": "UM-01",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "27.7",
+      "pairKey": "School Road|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 216
+    },
+    {
+      "originResearchId": "UM-01",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "4",
+      "pairKey": "School Road|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 217
+    },
+    {
+      "originResearchId": "UM-01",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "1.6",
+      "pairKey": "School Road|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 218
+    },
+    {
+      "originResearchId": "UM-01",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "1.1",
+      "pairKey": "School Road|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 219
+    },
+    {
+      "originResearchId": "UM-01",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "2.2",
+      "pairKey": "School Road|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 220
+    },
+    {
+      "originResearchId": "UM-01",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "2.5",
+      "pairKey": "School Road|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 221
+    },
+    {
+      "originResearchId": "UM-01",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "9.8",
+      "pairKey": "School Road|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 222
+    },
+    {
+      "originResearchId": "UM-01",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "1.6",
+      "pairKey": "School Road|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 223
+    },
+    {
+      "originResearchId": "UM-01",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "5.7",
+      "pairKey": "School Road|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 224
+    },
+    {
+      "originResearchId": "UM-01",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "3.9",
+      "pairKey": "School Road|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 225
+    },
+    {
+      "originResearchId": "UM-02",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "27.8",
+      "pairKey": "Azikiwe Road|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 226
+    },
+    {
+      "originResearchId": "UM-02",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "3.8",
+      "pairKey": "Azikiwe Road|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 227
+    },
+    {
+      "originResearchId": "UM-02",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "1.8",
+      "pairKey": "Azikiwe Road|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 228
+    },
+    {
+      "originResearchId": "UM-02",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "1.2",
+      "pairKey": "Azikiwe Road|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 229
+    },
+    {
+      "originResearchId": "UM-02",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "1.9",
+      "pairKey": "Azikiwe Road|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 230
+    },
+    {
+      "originResearchId": "UM-02",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "2.2",
+      "pairKey": "Azikiwe Road|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 231
+    },
+    {
+      "originResearchId": "UM-02",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "9.5",
+      "pairKey": "Azikiwe Road|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 232
+    },
+    {
+      "originResearchId": "UM-02",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "1.3",
+      "pairKey": "Azikiwe Road|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 233
+    },
+    {
+      "originResearchId": "UM-02",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "5.8",
+      "pairKey": "Azikiwe Road|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 234
+    },
+    {
+      "originResearchId": "UM-02",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "1",
+      "pairKey": "Azikiwe Road|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 235
+    },
+    {
+      "originResearchId": "UM-02",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "3.7",
+      "pairKey": "Azikiwe Road|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 236
+    },
+    {
+      "originResearchId": "UM-03",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "31.4",
+      "pairKey": "Aba Road|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 237
+    },
+    {
+      "originResearchId": "UM-03",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "27.8",
+      "pairKey": "Aba Road|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 238
+    },
+    {
+      "originResearchId": "UM-03",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "27.2",
+      "pairKey": "Aba Road|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 239
+    },
+    {
+      "originResearchId": "UM-03",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "29.6",
+      "pairKey": "Aba Road|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 240
+    },
+    {
+      "originResearchId": "UM-03",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "29.6",
+      "pairKey": "Aba Road|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 241
+    },
+    {
+      "originResearchId": "UM-03",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "23.8",
+      "pairKey": "Aba Road|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 242
+    },
+    {
+      "originResearchId": "UM-03",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "28.6",
+      "pairKey": "Aba Road|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 243
+    },
+    {
+      "originResearchId": "UM-03",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "33.4",
+      "pairKey": "Aba Road|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 244
+    },
+    {
+      "originResearchId": "UM-03",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "26.9",
+      "pairKey": "Aba Road|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 245
+    },
+    {
+      "originResearchId": "UM-03",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "31.3",
+      "pairKey": "Aba Road|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 246
+    },
+    {
+      "originResearchId": "UM-04",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "5.4",
+      "pairKey": "Bende Road|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 247
+    },
+    {
+      "originResearchId": "UM-04",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "4.8",
+      "pairKey": "Bende Road|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 248
+    },
+    {
+      "originResearchId": "UM-04",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "4.2",
+      "pairKey": "Bende Road|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 249
+    },
+    {
+      "originResearchId": "UM-04",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "3.7",
+      "pairKey": "Bende Road|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 250
+    },
+    {
+      "originResearchId": "UM-04",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "8.7",
+      "pairKey": "Bende Road|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 251
+    },
+    {
+      "originResearchId": "UM-04",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "3.8",
+      "pairKey": "Bende Road|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 252
+    },
+    {
+      "originResearchId": "UM-04",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "9.4",
+      "pairKey": "Bende Road|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 253
+    },
+    {
+      "originResearchId": "UM-04",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "4.6",
+      "pairKey": "Bende Road|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 254
+    },
+    {
+      "originResearchId": "UM-04",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "5.3",
+      "pairKey": "Bende Road|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 255
+    },
+    {
+      "originResearchId": "UM-06",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "1.8",
+      "pairKey": "Market Road|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 256
+    },
+    {
+      "originResearchId": "UM-06",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "3",
+      "pairKey": "Market Road|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 257
+    },
+    {
+      "originResearchId": "UM-06",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "10",
+      "pairKey": "Market Road|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 258
+    },
+    {
+      "originResearchId": "UM-06",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "1.1",
+      "pairKey": "Market Road|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 259
+    },
+    {
+      "originResearchId": "UM-06",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "4",
+      "pairKey": "Market Road|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 260
+    },
+    {
+      "originResearchId": "UM-06",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "1",
+      "pairKey": "Market Road|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 261
+    },
+    {
+      "originResearchId": "UM-06",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "3.5",
+      "pairKey": "Market Road|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 262
+    },
+    {
+      "originResearchId": "UM-07",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "2.4",
+      "pairKey": "Bank Road|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 263
+    },
+    {
+      "originResearchId": "UM-07",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "3.6",
+      "pairKey": "Bank Road|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 264
+    },
+    {
+      "originResearchId": "UM-07",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "9.8",
+      "pairKey": "Bank Road|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 265
+    },
+    {
+      "originResearchId": "UM-07",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "2",
+      "pairKey": "Bank Road|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 266
+    },
+    {
+      "originResearchId": "UM-07",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "4.6",
+      "pairKey": "Bank Road|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 267
+    },
+    {
+      "originResearchId": "UM-07",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "4.1",
+      "pairKey": "Bank Road|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 268
+    },
+    {
+      "originResearchId": "UM-08",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "1.4",
+      "pairKey": "Ossah Road|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 269
+    },
+    {
+      "originResearchId": "UM-08",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "11.8",
+      "pairKey": "Ossah Road|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 270
+    },
+    {
+      "originResearchId": "UM-08",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "4.2",
+      "pairKey": "Ossah Road|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 271
+    },
+    {
+      "originResearchId": "UM-08",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "2.7",
+      "pairKey": "Ossah Road|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 272
+    },
+    {
+      "originResearchId": "UM-08",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "1.8",
+      "pairKey": "Ossah Road|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 273
+    },
+    {
+      "originResearchId": "UM-09",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "12.1",
+      "pairKey": "Amuzukwu Road|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 274
+    },
+    {
+      "originResearchId": "UM-09",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "1.3",
+      "pairKey": "Amuzukwu Road|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 275
+    },
+    {
+      "originResearchId": "UM-09",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "5.4",
+      "pairKey": "Amuzukwu Road|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 276
+    },
+    {
+      "originResearchId": "UM-09",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "2.7",
+      "pairKey": "Amuzukwu Road|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 277
+    },
+    {
+      "originResearchId": "UM-09",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "1.8",
+      "pairKey": "Amuzukwu Road|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 278
+    },
+    {
+      "originResearchId": "UM-10",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "11.4",
+      "pairKey": "Umudike|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Umudike%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 279
+    },
+    {
+      "originResearchId": "UM-10",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "14.1",
+      "pairKey": "Umudike|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Umudike%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 280
+    },
+    {
+      "originResearchId": "UM-10",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "9.3",
+      "pairKey": "Umudike|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Umudike%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 281
+    },
+    {
+      "originResearchId": "UM-10",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "12.9",
+      "pairKey": "Umudike|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Umudike%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 282
+    },
+    {
+      "originResearchId": "LM-01",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "4.1",
+      "pairKey": "Umuahia Central Park|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 283
+    },
+    {
+      "originResearchId": "LM-01",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "1.4",
+      "pairKey": "Umuahia Central Park|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 284
+    },
+    {
+      "originResearchId": "LM-01",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "2.6",
+      "pairKey": "Umuahia Central Park|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 285
+    },
+    {
+      "originResearchId": "LM-02",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "5",
+      "pairKey": "Umuahia Tower|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Umuahia%20Tower%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 286
+    },
+    {
+      "originResearchId": "LM-02",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "5.9",
+      "pairKey": "Umuahia Tower|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Umuahia%20Tower%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 287
+    },
+    {
+      "originResearchId": "LM-05",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "4.5",
+      "pairKey": "Federal Medical Centre Umuahia|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 288
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "AB-03",
+      "distanceKm": "79",
+      "pairKey": "Aba|Bende",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Bende%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 289
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "AB-06",
+      "distanceKm": "21.7",
+      "pairKey": "Aba|Omoba",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Omoba%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 290
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "AB-08",
+      "distanceKm": "12.1",
+      "pairKey": "Aba|Mgboko",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 291
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "AB-09",
+      "distanceKm": "105",
+      "pairKey": "Aba|Ebem Ohafia",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 292
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "AB-12",
+      "distanceKm": "34.8",
+      "pairKey": "Aba|Akwete",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Akwete%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 293
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "61",
+      "pairKey": "Aba|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 294
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "64.5",
+      "pairKey": "Aba|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 295
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "60.6",
+      "pairKey": "Aba|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 296
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "59.5",
+      "pairKey": "Aba|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 297
+    },
+    {
+      "originResearchId": "AB-01",
+      "destinationResearchId": "LM-07",
+      "distanceKm": "61",
+      "pairKey": "Aba|National War Museum",
+      "sourceUrl": "https://www.google.com/maps/dir/Aba%2C%20Abia%2C%20Nigeria/National%20War%20Museum%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 298
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "AB-06",
+      "distanceKm": "71.9",
+      "pairKey": "Arochukwu|Omoba",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Omoba%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 299
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "AB-08",
+      "distanceKm": "67.3",
+      "pairKey": "Arochukwu|Mgboko",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 300
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "AB-10",
+      "distanceKm": "97.9",
+      "pairKey": "Arochukwu|Osisioma",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Osisioma%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 301
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "AB-13",
+      "distanceKm": "112",
+      "pairKey": "Arochukwu|Okeikpe",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Okeikpe%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 302
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "66.3",
+      "pairKey": "Arochukwu|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 303
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "62.5",
+      "pairKey": "Arochukwu|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 304
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "66.6",
+      "pairKey": "Arochukwu|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 305
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "57.1",
+      "pairKey": "Arochukwu|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 306
+    },
+    {
+      "originResearchId": "AB-02",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "71.9",
+      "pairKey": "Arochukwu|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Arochukwu%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 307
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "AB-04",
+      "distanceKm": "27.1",
+      "pairKey": "Bende|Isiala Oboro",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 308
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "AB-05",
+      "distanceKm": "43.9",
+      "pairKey": "Bende|Okpuala Ngwa",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 309
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "AB-09",
+      "distanceKm": "26.3",
+      "pairKey": "Bende|Ebem Ohafia",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 310
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "AB-10",
+      "distanceKm": "67.1",
+      "pairKey": "Bende|Osisioma",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Osisioma%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 311
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "AB-15",
+      "distanceKm": "83.6",
+      "pairKey": "Bende|Nkwoagu",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 312
+    },
+    {
+      "originResearchId": "AB-03",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "18.6",
+      "pairKey": "Bende|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Bende%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 313
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "AB-06",
+      "distanceKm": "42.8",
+      "pairKey": "Isiala Oboro|Omoba",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Omoba%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 314
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "AB-07",
+      "distanceKm": "57.6",
+      "pairKey": "Isiala Oboro|Mbalano",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 315
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "AB-08",
+      "distanceKm": "49.5",
+      "pairKey": "Isiala Oboro|Mgboko",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 316
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "AB-10",
+      "distanceKm": "68.3",
+      "pairKey": "Isiala Oboro|Osisioma",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Osisioma%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 317
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "UM-03",
+      "distanceKm": "23.7",
+      "pairKey": "Isiala Oboro|Aba Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Aba%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 318
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "22.4",
+      "pairKey": "Isiala Oboro|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 319
+    },
+    {
+      "originResearchId": "AB-04",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "20.4",
+      "pairKey": "Isiala Oboro|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Isiala%20Oboro%2C%20Ikwuano%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 320
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "AB-07",
+      "distanceKm": "55.4",
+      "pairKey": "Okpuala Ngwa|Mbalano",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 321
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "AB-09",
+      "distanceKm": "72.5",
+      "pairKey": "Okpuala Ngwa|Ebem Ohafia",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 322
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "AB-11",
+      "distanceKm": "57.2",
+      "pairKey": "Okpuala Ngwa|Osusuaku",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 323
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "AB-12",
+      "distanceKm": "80.4",
+      "pairKey": "Okpuala Ngwa|Akwete",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Akwete%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 324
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "AB-13",
+      "distanceKm": "69.9",
+      "pairKey": "Okpuala Ngwa|Okeikpe",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Okeikpe%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 325
+    },
+    {
+      "originResearchId": "AB-05",
+      "destinationResearchId": "AB-15",
+      "distanceKm": "82.6",
+      "pairKey": "Okpuala Ngwa|Nkwoagu",
+      "sourceUrl": "https://www.google.com/maps/dir/Okpuala%20Ngwa%2C%20Abia%2C%20Nigeria/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 326
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "AB-07",
+      "distanceKm": "70.7",
+      "pairKey": "Omoba|Mbalano",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 327
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "AB-09",
+      "distanceKm": "87.7",
+      "pairKey": "Omoba|Ebem Ohafia",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 328
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "AB-11",
+      "distanceKm": "34.1",
+      "pairKey": "Omoba|Osusuaku",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Osusuaku%2C%20Ugwunagbo%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 329
+    },
+    {
+      "originResearchId": "AB-06",
+      "destinationResearchId": "AB-13",
+      "distanceKm": "54.4",
+      "pairKey": "Omoba|Okeikpe",
+      "sourceUrl": "https://www.google.com/maps/dir/Omoba%2C%20Abia%2C%20Nigeria/Okeikpe%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 330
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "AB-08",
+      "distanceKm": "84.6",
+      "pairKey": "Mbalano|Mgboko",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 331
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "AB-09",
+      "distanceKm": "52.1",
+      "pairKey": "Mbalano|Ebem Ohafia",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 332
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "AB-15",
+      "distanceKm": "40.6",
+      "pairKey": "Mbalano|Nkwoagu",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Nkwoagu%2C%20Umunneochi%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 333
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "UM-08",
+      "distanceKm": "35.7",
+      "pairKey": "Mbalano|Ossah Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 334
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "36.9",
+      "pairKey": "Mbalano|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 335
+    },
+    {
+      "originResearchId": "AB-07",
+      "destinationResearchId": "LM-02",
+      "distanceKm": "32.6",
+      "pairKey": "Mbalano|Umuahia Tower",
+      "sourceUrl": "https://www.google.com/maps/dir/Mbalano%2C%20Isuikwuato%2C%20Abia%2C%20Nigeria/Umuahia%20Tower%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 336
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "AB-10",
+      "distanceKm": "23.9",
+      "pairKey": "Mgboko|Osisioma",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Osisioma%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 337
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "AB-13",
+      "distanceKm": "37.7",
+      "pairKey": "Mgboko|Okeikpe",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Okeikpe%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 338
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "UM-04",
+      "distanceKm": "51.9",
+      "pairKey": "Mgboko|Bende Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Bende%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 339
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "UM-06",
+      "distanceKm": "55.7",
+      "pairKey": "Mgboko|Market Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 340
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "47.7",
+      "pairKey": "Mgboko|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 341
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "UM-09",
+      "distanceKm": "57.1",
+      "pairKey": "Mgboko|Amuzukwu Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Amuzukwu%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 342
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "UM-10",
+      "distanceKm": "49.6",
+      "pairKey": "Mgboko|Umudike",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 343
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "56.1",
+      "pairKey": "Mgboko|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 344
+    },
+    {
+      "originResearchId": "AB-08",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "47.4",
+      "pairKey": "Mgboko|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Mgboko%2C%20Obingwa%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 345
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "UM-01",
+      "distanceKm": "44.3",
+      "pairKey": "Ebem Ohafia|School Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 346
+    },
+    {
+      "originResearchId": "AB-09",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "45",
+      "pairKey": "Ebem Ohafia|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Ebem%20Ohafia%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 347
+    },
+    {
+      "originResearchId": "UM-01",
+      "destinationResearchId": "UM-02",
+      "distanceKm": "0.27",
+      "pairKey": "School Road|Azikiwe Road",
+      "sourceUrl": "https://www.google.com/maps/dir/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Azikiwe%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 348
+    },
+    {
+      "originResearchId": "UM-01",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "0.85",
+      "pairKey": "School Road|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 349
+    },
+    {
+      "originResearchId": "UM-06",
+      "destinationResearchId": "UM-07",
+      "distanceKm": "0.6",
+      "pairKey": "Market Road|Bank Road",
+      "sourceUrl": "https://www.google.com/maps/dir/Market%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 350
+    },
+    {
+      "originResearchId": "UM-07",
+      "destinationResearchId": "LM-05",
+      "distanceKm": "0.35",
+      "pairKey": "Bank Road|Federal Medical Centre Umuahia",
+      "sourceUrl": "https://www.google.com/maps/dir/Bank%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Federal%20Medical%20Centre%20Umuahia%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 351
+    },
+    {
+      "originResearchId": "UM-08",
+      "destinationResearchId": "LM-01",
+      "distanceKm": "0.85",
+      "pairKey": "Ossah Road|Umuahia Central Park",
+      "sourceUrl": "https://www.google.com/maps/dir/Ossah%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umuahia%20Central%20Park%2C%20Abia%2C%20Nigeria",
+      "sourceLabel": "Google Maps driving directions",
+      "collectedAt": "2026-09-14T09:24:50.562000+00:00",
+      "sourceRow": 352
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google Maps route pages",
+      "value": "https://www.google.com/maps/dir/",
+      "use": "Route distance source for each row in Routes."
+    },
+    {
+      "label": "Abia State Government LGA list",
+      "value": "https://abiastate.gov.ng/local-governments-3/",
+      "use": "State administrative structure."
+    },
+    {
+      "label": "INEC Abia locator",
+      "value": "https://cvr.inecnigeria.org/locator/browse/1/",
+      "use": "Cross-check for LGA reference offices."
+    },
+    {
+      "label": "Base route",
+      "value": "https://www.google.com/maps/dir/School%20Road%2C%20Umuahia%2C%20Abia%2C%20Nigeria/Umudike%2C%20Abia%2C%20Nigeria",
+      "use": "School Road to Umudike reference route."
+    },
+    {
+      "label": "Base fee",
+      "value": "₦10,000",
+      "use": "Editable driver on Calculator."
+    },
+    {
+      "label": "Collection date",
+      "value": "2026-09-14 09:24:50 UTC",
+      "use": "Timestamp from Google Maps collection run."
+    }
+  ],
+  "lgaMap": [
+    {
+      "lga": "Aba North",
+      "referenceLocation": "Aba",
+      "query": "Aba",
+      "referenceType": "LGA hub",
+      "note": "Umuahia North and Umuahia South use practical urban reference points because their administrative headquarters are within Umuahia."
+    },
+    {
+      "lga": "Aba South",
+      "referenceLocation": "Aba",
+      "query": "Aba",
+      "referenceType": "LGA hub",
+      "note": ""
+    },
+    {
+      "lga": "Arochukwu",
+      "referenceLocation": "Arochukwu",
+      "query": "Arochukwu",
+      "referenceType": "LGA hub",
+      "note": ""
+    },
+    {
+      "lga": "Bende",
+      "referenceLocation": "Bende",
+      "query": "Bende",
+      "referenceType": "LGA hub",
+      "note": ""
+    },
+    {
+      "lga": "Ikwuano",
+      "referenceLocation": "Isiala Oboro",
+      "query": "Isiala Oboro",
+      "referenceType": "LGA hub",
+      "note": ""
+    },
+    {
+      "lga": "Isiala Ngwa North",
+      "referenceLocation": "Okpuala Ngwa",
+      "query": "Okpuala Ngwa",
+      "referenceType": "LGA hub",
+      "note": ""
+    },
+    {
+      "lga": "Isiala Ngwa South",
+      "referenceLocation": "Omoba",
+      "query": "Omoba",
+      "referenceType": "LGA hub",
+      "note": ""
+    },
+    {
+      "lga": "Isuikwuato",
+      "referenceLocation": "Mbalano",
+      "query": "Mbalano",
+      "referenceType": "LGA hub",
+      "note": ""
+    },
+    {
+      "lga": "Obingwa",
+      "referenceLocation": "Mgboko",
+      "query": "Mgboko",
+      "referenceType": "LGA hub",
+      "note": ""
+    },
+    {
+      "lga": "Ohafia",
+      "referenceLocation": "Ebem Ohafia",
+      "query": "Ebem Ohafia",
+      "referenceType": "LGA hub",
+      "note": ""
+    },
+    {
+      "lga": "Osisioma",
+      "referenceLocation": "Osisioma",
+      "query": "Osisioma",
+      "referenceType": "LGA hub",
+      "note": ""
+    },
+    {
+      "lga": "Ugwunagbo",
+      "referenceLocation": "Osusuaku",
+      "query": "Osusuaku",
+      "referenceType": "LGA hub",
+      "note": ""
+    },
+    {
+      "lga": "Ukwa East",
+      "referenceLocation": "Akwete",
+      "query": "Akwete",
+      "referenceType": "LGA hub",
+      "note": ""
+    },
+    {
+      "lga": "Ukwa West",
+      "referenceLocation": "Okeikpe",
+      "query": "Okeikpe",
+      "referenceType": "LGA hub",
+      "note": ""
+    },
+    {
+      "lga": "Umuahia North",
+      "referenceLocation": "School Road",
+      "query": "School Road, Umuahia",
+      "referenceType": "Central reference",
+      "note": ""
+    },
+    {
+      "lga": "Umuahia South",
+      "referenceLocation": "Old Umuahia",
+      "query": "Old Umuahia",
+      "referenceType": "Area reference",
+      "note": ""
+    },
+    {
+      "lga": "Umunneochi",
+      "referenceLocation": "Nkwoagu",
+      "query": "Nkwoagu",
+      "referenceType": "LGA hub",
+      "note": ""
+    }
+  ]
+}

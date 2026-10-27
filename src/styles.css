@@ -27,6 +27,22 @@
 .app-shell {
   min-height: 100vh;
 }
+.skip-link {
+  position: absolute;
+  z-index: 10;
+  left: 1rem;
+  top: 0.5rem;
+  padding: 0.75rem 1rem;
+  color: var(--cream);
+  background: var(--leaf);
+  transform: translateY(-200%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+#page-content:focus {
+  outline: none;
+}
 .topbar {
   max-width: 1280px;
   margin: auto;
@@ -44,6 +60,7 @@
   background: transparent;
   border: 0;
   text-align: left;
+  text-decoration: none;
 }
 .brand-mark {
   display: grid;
@@ -55,6 +72,12 @@
   border-radius: 0.65rem;
   font-family: "Fraunces", Georgia, serif;
   font-size: 1.4rem;
+  overflow: hidden;
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .brand-lockup strong,
 .brand-lockup small {
@@ -71,24 +94,33 @@
 }
 .topnav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.8rem;
 }
-.topnav button {
+.topnav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: var(--muted);
   background: transparent;
   border: 0;
   padding: 0.6rem 0.2rem;
   font-size: 0.7rem;
+  text-decoration: none;
 }
-.topnav .owner-link {
+.topnav a[aria-current="page"] {
   color: var(--leaf);
+  text-decoration: underline;
+  text-decoration-color: var(--orange);
+  text-underline-offset: 0.4rem;
 }
 .site-footer {
   max-width: 1280px;
   margin: auto;
   padding: 1rem 1.25rem 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
   color: var(--muted);
@@ -159,12 +191,15 @@ p {
   color: var(--cream);
   padding: clamp(2rem, 7vw, 7rem) clamp(1.5rem, 6vw, 6rem);
   position: relative;
+  isolation: isolate;
   overflow: hidden;
   border-radius: 2rem;
 }
 .hero-panel::after {
   content: "";
   position: absolute;
+  z-index: -1;
+  pointer-events: none;
   width: 25rem;
   height: 25rem;
   border: 1px solid var(--orange);
@@ -175,6 +210,9 @@ p {
     0 0 0 2rem var(--leaf),
     0 0 0 3rem var(--orange);
   opacity: 0.9;
+}
+.hero-panel h1 {
+  font-size: clamp(2.5rem, 5.3vw, 4.5rem);
 }
 .hero-panel h1 em {
   color: var(--orange);
@@ -239,6 +277,56 @@ p {
 .stack-form {
   display: grid;
   gap: 1rem;
+}
+.form-help {
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin: -0.4rem 0 0;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+}
+.checkbox-label input {
+  width: 1.2rem;
+  min-height: 1.2rem;
+  flex: 0 0 auto;
+  margin: 0;
+}
+.history-page {
+  padding-top: 3rem;
+}
+.history-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.history-card {
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+.history-card .section-heading h2 {
+  font-size: 1.4rem;
+  overflow-wrap: anywhere;
+}
+.history-card .section-heading {
+  flex-wrap: wrap;
+}
+.history-heading,
+.history-card,
+.detail-list dd,
+.booking-row-main {
+  overflow-wrap: anywhere;
+}
+.timeline li {
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.timeline li span:last-child {
+  flex-basis: 100%;
 }
 label,
 legend {
@@ -577,7 +665,7 @@ legend {
 }
 .tab-nav {
   display: flex;
-  overflow-x: auto;
+  flex-wrap: wrap;
   gap: 0.3rem;
   padding: 1rem 0;
 }
@@ -588,6 +676,7 @@ legend {
   border: 0;
   border-bottom: 2px solid transparent;
   padding: 0.7rem 0.85rem;
+  min-height: 44px;
   font-size: 0.72rem;
 }
 .tab-nav button.active {
@@ -628,6 +717,9 @@ legend {
   display: grid;
   gap: 0.35rem;
   min-width: 0;
+}
+.booking-row > .status-pill {
+  align-self: start;
 }
 .booking-row-main strong {
   overflow: hidden;
@@ -700,6 +792,10 @@ legend {
     border-radius: 1.25rem;
     padding: 2rem 1.35rem;
   }
+  .hero-panel::after {
+    right: -14rem;
+    bottom: -16rem;
+  }
   .hero-stamp {
     left: 1.5rem;
     bottom: 1.5rem;
@@ -715,7 +811,7 @@ legend {
   }
   .trust-strip {
     margin: 2rem 0;
-    overflow-x: auto;
+    flex-wrap: wrap;
   }
   .trust-strip span {
     white-space: nowrap;
@@ -1319,4 +1415,377 @@ legend {
   .route-map {
     height: 12rem;
   }
+}
+
+/* Research and pricing controls */
+.pricing-content {
+  display: grid;
+  gap: 1rem;
+}
+.pricing-content > p {
+  margin: 0;
+}
+.pricing-card {
+  border: 1px solid var(--border, #ddd);
+  border-radius: 1rem;
+  padding: clamp(1rem, 3vw, 1.75rem);
+  min-width: 0;
+  background: #fff;
+}
+.pricing-card h3:first-child {
+  margin-top: 0;
+}
+.pricing-filters,
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.pricing-filters label,
+.form-grid label {
+  min-width: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+.route-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.route-choice {
+  display: grid;
+  gap: 0.45rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  text-align: left;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+  min-width: 0;
+  cursor: pointer;
+}
+.route-choice strong {
+  overflow-wrap: anywhere;
+}
+.route-choice.selected {
+  border-color: #a25b34;
+  background: #fff5ed;
+}
+.route-choice:hover {
+  border-color: #a25b34;
+}
+.route-choice span {
+  font-size: 0.875rem;
+}
+.route-choice .text-link {
+  color: #8b4829;
+}
+.plain-fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.pricing-preview {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: #f7f4ef;
+  overflow-wrap: anywhere;
+}
+.pricing-preview p {
+  margin: 0.5rem 0 0;
+}
+.fare-preview-amount {
+  display: block;
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+.research-details,
+.research-note {
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
+}
+.research-details summary {
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+.research-details code {
+  overflow-wrap: anywhere;
+}
+.research-note {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f7f4ef;
+  border-radius: 0.75rem;
+}
+.fixed-price-form {
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #ddd;
+}
+.pagination {
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+.checkbox-label {
+  display: flex !important;
+  align-items: center;
+  gap: 0.6rem;
+}
+.checkbox-label input {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  .route-list,
+  .pricing-filters,
+  .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .pagination {
+    gap: 0.75rem;
+  }
+  .pagination span {
+    width: 100%;
+    text-align: center;
+    order: 3;
+  }
+}
+
+.price-choice {
+  display: grid;
+  gap: 0.75rem;
+  min-width: 0;
+}
+.price-choice-option {
+  display: flex !important;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  line-height: 1.5;
+}
+.price-choice-option input {
+  flex: 0 0 auto;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0;
+}
+.offer-form {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  min-width: 0;
+}
+.offer-form p {
+  margin: 0;
+}
+.offer-preview {
+  background: #f7f4ef;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-wrap: anywhere;
+}
+.offer-preview p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.offer-entered {
+  display: block;
+  margin-top: 0.4rem;
+  color: #555;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.request-fares {
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
+}
+.request-fares > div {
+  padding: 0.5rem 0;
+}
+.booking-row-main > strong {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+.request-filters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.request-filters label {
+  display: grid;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.request-search {
+  grid-column: 1 / -1;
+}
+.admin-ride-details,
+.conflict-notice {
+  grid-column: 1 / -1;
+  min-width: 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+.conflict-notice {
+  background: #fff5df;
+  border: 1px solid #b99149;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  overflow-wrap: anywhere;
+}
+.conflict-notice h4 {
+  margin-top: 0;
+}
+.conflict-notice li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.inline-warning {
+  background: #fff5df;
+  border-left: 3px solid #b99149;
+  padding: 0.75rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.scheduling-content {
+  display: grid;
+  gap: 1rem;
+}
+.scheduling-content > h3,
+.scheduling-content > p {
+  margin: 0.25rem 0;
+}
+.scheduling-content > .section-heading {
+  flex-wrap: wrap;
+}
+.scheduling-card {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  min-width: 0;
+}
+.upcoming-rides {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.upcoming-ride {
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+.schedule-preview {
+  padding: 1rem;
+  background: #f7f4ef;
+  margin-top: 1rem;
+  border-radius: 0.75rem;
+  overflow-wrap: anywhere;
+}
+.schedule-history {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .request-filters,
+  .upcoming-rides {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .admin-ride-details input[type="datetime-local"] {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+.notification-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.notification-content .section-heading {
+  flex-wrap: wrap;
+}
+.notification-settings,
+.notification-settings .stack-form,
+.notification-event-grid,
+.notification-settings label {
+  min-width: 0;
+}
+.notification-content h3,
+.notification-content h4 {
+  margin-top: 0;
+}
+.notification-connection,
+.notification-event,
+.notification-record,
+.notification-confirm {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.notification-connection {
+  background: #f7f4ef;
+}
+.notification-settings summary {
+  cursor: pointer;
+  padding: 1rem 0;
+  font-weight: 600;
+}
+.notification-settings > form {
+  padding-top: 1rem;
+}
+.notification-event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.notification-list {
+  display: grid;
+  gap: 1rem;
+}
+.notification-record .section-heading {
+  flex-wrap: wrap;
+}
+.notification-detail {
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+.notification-detail pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: inherit;
+  line-height: 1.7;
+  background: #f7f4ef;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.notification-confirm {
+  margin-top: 1rem;
+  background: #fff5df;
+}
+@media (max-width: 700px) {
+  .notification-event-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.calendar-address {
+  overflow-wrap: anywhere;
 }

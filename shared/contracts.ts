@@ -1,4 +1,5 @@
 import type { Actor, BookingStatus, RequestStatus } from "./config.js";
+import type { EmailState } from "./notifications.js";
 
 export interface ServiceLocation {
   id: string;
@@ -7,6 +8,10 @@ export interface ServiceLocation {
   mapsUrl: string;
   coordinates: string;
   published: boolean;
+  researchId?: string;
+  researchArea?: string;
+  researchCategory?: string;
+  researchSourceUrl?: string;
 }
 
 export interface OperatingSchedule {
@@ -35,6 +40,7 @@ export interface FareRule {
   active: boolean;
   originName?: string;
   destinationName?: string;
+  roundedAmountKobo?: number;
 }
 
 export interface AvailableSchedule {
@@ -49,6 +55,66 @@ export interface FarePreview {
   currency: string;
   originName: string;
   destinationName: string;
+  pricing?: PricingBreakdown;
+}
+
+export interface PricingBreakdown {
+  routeId: string;
+  method: "fixed" | "distance";
+  distanceKm: string | null;
+  ratePerKm: string | null;
+  fixedAmountNaira: string | null;
+  fixedRuleId: string | null;
+  unroundedNaira: string;
+  roundingNaira: 50;
+  pricingAreaId?: string | null;
+  pricingAreaName?: string | null;
+  rateSource?: "fixed" | "area" | "default";
+}
+
+export interface PricingArea {
+  id: string;
+  name: string;
+  ratePerKm: string | null;
+}
+
+export interface ServiceRoute {
+  id: string;
+  originId: string;
+  destinationId: string;
+  originName: string;
+  destinationName: string;
+  distanceKm: string | null;
+  published: boolean;
+  researchDistanceKm: string | null;
+  sourceUrl: string;
+  sourceLabel: string;
+  collectedAt: string;
+  sourcePairKey: string;
+  sourceRow: number | null;
+  distanceNote: string;
+  pricingAreaId: string | null;
+}
+
+export interface PricingSettings {
+  defaultRatePerKm: string | null;
+}
+
+export interface PricingOverview {
+  settings: PricingSettings;
+  areas: PricingArea[];
+  routes: ServiceRoute[];
+  fares: FareRule[];
+  locations: ServiceLocation[];
+  research: {
+    workbook: string;
+    sha256: string;
+    collectionDate: string;
+    locationCount: number;
+    routePairCount: number;
+    directionalRouteCount: number;
+    suggestedRatePerKm: string;
+  };
 }
 
 export interface BookingStatusEvent {
@@ -59,20 +125,65 @@ export interface BookingStatusEvent {
   createdAt: string;
 }
 
+export interface OfferPreview {
+  amountNaira: string;
+  roundedAmountKobo: number;
+}
+
+export interface PriceOffer extends OfferPreview {
+  note: string;
+}
+
+export interface BookingScheduleEvent {
+  id: string;
+  fromPickupAt: string;
+  toPickupAt: string;
+  fromReservedMinutes: number | null;
+  toReservedMinutes: number | null;
+  reason: string;
+  actor: "owner";
+  createdAt: string;
+}
+
+export interface RideConflict {
+  id: string;
+  reference: string;
+  pickupAt: string;
+  route: string;
+  kind: "same_pickup" | "same_day";
+}
+
+export interface ConflictReview {
+  conflicts: RideConflict[];
+  token: string;
+}
+
 export interface Booking {
   id: string;
   reference: string;
   accessToken: string;
   customerName: string;
   phone: string;
+  email?: string;
+  whatsappNumber?: string;
+  whatsappUpdates?: boolean;
+  whatsappConsentAt?: string;
+  whatsappOptOutAt?: string;
+  rejectionReason?: string;
   origin: ServiceLocation;
   destination: ServiceLocation;
   pickupNote: string;
   pickupAt: string;
+  reservedMinutes?: number | null;
+  scheduleRevision?: number;
+  scheduleEvents?: BookingScheduleEvent[];
   fare: FarePreview;
+  offer?: PriceOffer;
+  agreedAmountKobo?: number;
   status: BookingStatus;
   cancellationReason: string;
   notificationStatus: string;
+  customerEmailStatus?: EmailState;
   createdAt: string;
   events: BookingStatusEvent[];
 }
@@ -91,8 +202,18 @@ export interface LocationRequest {
 
 export interface BookingCreationInput {
   idempotencyKey: string;
-  customerName: string;
-  phone: string;
+  customerName?: string;
+  phone?: string;
+  email?: string;
+  whatsappNumber?: string;
+  whatsappUpdates?: boolean;
+  whatsappConsentAt?: string;
+  whatsappOptOutAt?: string;
+  quotedAmountKobo?: number;
+  priceChoice?: "accept" | "negotiate";
+  proposedAmountNaira?: string;
+  proposedAmountKobo?: number;
+  negotiationNote?: string;
   originId: string;
   destinationId: string;
   pickupAt: string;
@@ -106,5 +227,11 @@ export interface BookingAccessResponse {
 
 export interface OwnerSession {
   token: string;
+  expiresAt: number;
+}
+
+export interface RequestHistory {
+  email: string;
+  bookings: Booking[];
   expiresAt: number;
 }
