@@ -125,7 +125,7 @@ describe("area pricing controls", () => {
     expect(vi.mocked(apiFetch).mock.calls.some(([path]) => path === "/owner/routes/route-a")).toBe(
       false,
     );
-    const save = screen.getByRole("button", { name: "Save route", exact: true });
+    const save = screen.getByRole("button", { name: "Save route" });
     await waitFor(() => expect(save).toBeEnabled());
     fireEvent.click(save);
     await waitFor(() =>

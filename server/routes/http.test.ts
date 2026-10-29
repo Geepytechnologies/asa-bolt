@@ -4,8 +4,20 @@ import { createHash } from "node:crypto";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { createRequestHandler } from "./http.js";
 import { bookingFixture, clockNow, silentNotifications } from "../../tests/booking-fixture.js";
+import type { CalendarOverview } from "../../shared/calendar.js";
+import type {
+  Booking,
+  BookingAccessResponse,
+  FarePreview,
+  PricingArea,
+  PricingOverview,
+  RequestHistory,
+} from "../../shared/contracts.js";
 const fixtures: ReturnType<typeof bookingFixture>[] = [];
 const servers: Server[] = [];
+async function responseJson<T>(response: Response | Promise<Response>): Promise<T> {
+  return (await response).json() as Promise<T>;
+}
 async function setup(options: { calendarFetch?: typeof fetch } = {}) {
   const f = bookingFixture();
   fixtures.push(f);
@@ -34,7 +46,8 @@ async function setup(options: { calendarFetch?: typeof fetch } = {}) {
     });
   const login = async () => {
     const r = await call("/owner/login", "POST", { password: "test-owner" });
-    return { Authorization: `Bearer ${(await r.json()).token}` };
+    const session = await responseJson<{ token: string; expiresAt: number }>(r);
+    return { Authorization: `Bearer ${session.token}` };
   };
   return { ...f, call, login };
 }
@@ -59,11 +72,15 @@ describe("email request API", () => {
     expect((await f.call("/owner/calendar")).status).toBe(401);
     expect((await f.call("/owner/calendar/connect", "POST", {})).status).toBe(401);
     const auth = await f.login();
-    const overview = await (await f.call("/owner/calendar", "GET", undefined, auth)).json();
+    const overview = await responseJson<CalendarOverview>(
+      f.call("/owner/calendar", "GET", undefined, auth),
+    );
     expect(overview).toMatchObject({ configured: false, connected: false, ready: false });
     expect(overview.missing).toHaveLength(3);
     expect((await f.call("/owner/calendar/connect", "POST", {}, auth)).status).toBe(409);
-    const created = await (await f.call("/bookings", "POST", f.input())).json();
+    const created = await responseJson<BookingAccessResponse>(
+      f.call("/bookings", "POST", f.input()),
+    );
     expect(
       (
         await f.call(
@@ -74,7 +91,9 @@ describe("email request API", () => {
         )
       ).status,
     ).toBe(200);
-    const pending = await (await f.call("/owner/calendar", "GET", undefined, auth)).json();
+    const pending = await responseJson<CalendarOverview>(
+      f.call("/owner/calendar", "GET", undefined, auth),
+    );
     expect(pending.updates).toMatchObject([
       { bookingId: created.booking.id, status: "awaiting_setup", attempts: 0 },
     ]);
@@ -105,7 +124,9 @@ describe("email request API", () => {
       ASA_BOLT_CALENDAR_TOKEN_KEY: "ab".repeat(32),
     });
     const expiredAuth = await f.login();
-    const expired = await (await f.call("/owner/calendar/connect", "POST", {}, expiredAuth)).json();
+    const expired = await responseJson<{ url: string }>(
+      f.call("/owner/calendar/connect", "POST", {}, expiredAuth),
+    );
     await f.call("/owner/logout", "POST", {}, expiredAuth);
     const callback = async (url: string) =>
       f.call(
@@ -116,13 +137,17 @@ describe("email request API", () => {
     );
     expect(send).not.toHaveBeenCalled();
     const auth = await f.login();
-    const start = await (await f.call("/owner/calendar/connect", "POST", {}, auth)).json();
+    const start = await responseJson<{ url: string }>(
+      f.call("/owner/calendar/connect", "POST", {}, auth),
+    );
     expect(new URL(start.url).origin).toBe("https://accounts.google.com");
     const response = await callback(start.url);
     expect(response.status).toBe(303);
     expect(response.headers.get("location")).toBe("http://localhost:5173/admin?calendar=connected");
     expect((await callback(start.url)).headers.get("location")).toContain("calendar=failed");
-    let overview = await (await f.call("/owner/calendar", "GET", undefined, auth)).json();
+    let overview = await responseJson<CalendarOverview>(
+      f.call("/owner/calendar", "GET", undefined, auth),
+    );
     expect(JSON.stringify(overview)).not.toMatch(/fixture-secret|fixture-access|fixture-refresh/);
     expect(overview).toMatchObject({ connected: true, ready: false });
     expect(
@@ -135,7 +160,9 @@ describe("email request API", () => {
         )
       ).status,
     ).toBe(200);
-    overview = await (await f.call("/owner/calendar", "GET", undefined, auth)).json();
+    overview = await responseJson<CalendarOverview>(
+      f.call("/owner/calendar", "GET", undefined, auth),
+    );
     expect(overview).toMatchObject({ ready: true, calendarName: "Dispatch" });
     expect(
       (
@@ -155,7 +182,7 @@ describe("email request API", () => {
     const auth = await f.login();
     const response = await f.call(path, "PATCH", { name: "Area A", ratePerKm: "150" }, auth);
     expect(response.status).toBe(200);
-    const area = await response.json();
+    const area = await responseJson<PricingArea>(response);
     const routeBody = { ...f.route, distanceKm: "8.12", published: true, pricingAreaId: area.id };
     expect((await f.call(`/owner/routes/${f.route.id}`, "PATCH", routeBody, auth)).status).toBe(
       200,
@@ -165,7 +192,7 @@ describe("email request API", () => {
       destinationId: f.route.destinationId,
       date: "2030-01-07",
     });
-    const quote = async () => (await f.call(`/fares/preview?${query}`)).json();
+    const quote = () => responseJson<FarePreview>(f.call(`/fares/preview?${query}`));
     expect(await quote()).toMatchObject({ amountKobo: 125000, pricing: { rateSource: "area" } });
     expect((await f.call(path, "PATCH", { name: "AREA A", ratePerKm: "100" }, auth)).status).toBe(
       409,
@@ -212,7 +239,9 @@ describe("email request API", () => {
       auth,
     );
     expect(await quote()).toMatchObject({ amountKobo: 100000, pricing: { rateSource: "fixed" } });
-    const overview = await (await f.call("/owner/pricing", "GET", undefined, auth)).json();
+    const overview = await responseJson<PricingOverview>(
+      f.call("/owner/pricing", "GET", undefined, auth),
+    );
     expect(overview.areas).toMatchObject([{ id: area.id, ratePerKm: "200" }]);
     const draft = await f.call(
       "/owner/pricing/preview",
@@ -226,7 +255,7 @@ describe("email request API", () => {
       },
       auth,
     );
-    expect((await draft.json()).amountKobo).toBe(85000);
+    expect((await responseJson<FarePreview>(draft)).amountKobo).toBe(85000);
   });
   it("returns one pending request per key even when email is unconfigured", async () => {
     const f = await setup(),
@@ -235,8 +264,8 @@ describe("email request API", () => {
       second = await f.call("/bookings", "POST", input);
     expect(first.status).toBe(201);
     expect(second.status).toBe(201);
-    const a = await first.json(),
-      b = await second.json();
+    const a = await responseJson<BookingAccessResponse>(first),
+      b = await responseJson<BookingAccessResponse>(second);
     expect(a.booking).toMatchObject({ status: "requested", customerEmailStatus: "failed" });
     expect(b.booking.id).toBe(a.booking.id);
     expect(f.repository.listBookings()).toHaveLength(1);
@@ -246,8 +275,8 @@ describe("email request API", () => {
   });
   it("protects every notification channel and permits a rounded admin decision", async () => {
     const f = await setup();
-    const created = await (
-      await f.call(
+    const created = await responseJson<BookingAccessResponse>(
+      f.call(
         "/bookings",
         "POST",
         f.input({
@@ -255,8 +284,8 @@ describe("email request API", () => {
           proposedAmountNaira: "812",
           proposedAmountKobo: 85000,
         }),
-      )
-    ).json();
+      ),
+    );
     expect((await f.call("/owner/notifications")).status).toBe(401);
     expect((await f.call("/owner/whatsapp-notifications")).status).toBe(401);
     const auth = await f.login();
@@ -267,7 +296,7 @@ describe("email request API", () => {
       auth,
     );
     expect(accepted.status).toBe(200);
-    expect((await accepted.json()).booking).toMatchObject({
+    expect((await responseJson<{ booking: Booking }>(accepted)).booking).toMatchObject({
       status: "confirmed",
       agreedAmountKobo: 85000,
     });
@@ -277,10 +306,10 @@ describe("email request API", () => {
   });
   it("rejects unanswered requests before serving their private details at cutoff", async () => {
     const f = await setup(),
-      created = await (await f.call("/bookings", "POST", f.input())).json();
+      created = await responseJson<BookingAccessResponse>(f.call("/bookings", "POST", f.input()));
     vi.setSystemTime(created.booking.pickupAt);
     const response = await f.call(`/bookings/status/${created.booking.accessToken}`);
-    const detail = await response.json();
+    const detail = await responseJson<BookingAccessResponse>(response);
     expect(detail.booking).toMatchObject({
       status: "rejected",
       rejectionReason: "Not accepted before pickup time.",
@@ -318,7 +347,7 @@ describe("email request API", () => {
     const cookie = setCookie.split(";")[0];
     const history = await f.call("/history", "GET", undefined, { Cookie: cookie });
     expect(history.status).toBe(200);
-    expect((await history.json()).email).toBe("rider@example.test");
+    expect((await responseJson<RequestHistory>(history)).email).toBe("rider@example.test");
     expect((await f.call("/history/verify", "POST", { token })).status).toBe(401);
     expect(
       (
@@ -370,7 +399,7 @@ describe("email request API", () => {
   });
   it("does not put private tokens, contacts, or request paths in request logs", async () => {
     const f = await setup();
-    const saved = await (await f.call("/bookings", "POST", f.input())).json();
+    const saved = await responseJson<BookingAccessResponse>(f.call("/bookings", "POST", f.input()));
     await f.call(`/bookings/status/${saved.booking.accessToken}`);
     const logs = vi.mocked(console.info).mock.calls.flat().join(" ");
     expect(logs).toContain('"category":"customer"');

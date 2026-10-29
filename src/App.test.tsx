@@ -27,7 +27,7 @@ describe("connected portals", () => {
     expect(
       screen.getByRole("heading", { name: /move with local confidence/i }),
     ).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "My requests", exact: true })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "My requests" })).toHaveAttribute(
       "href",
       "/my-requests",
     );
@@ -38,10 +38,8 @@ describe("connected portals", () => {
   });
   it("opens private admin sign-in through navigation and direct links", async () => {
     render(<App />);
-    fireEvent.click(screen.getByRole("link", { name: "Admin portal", exact: true }));
-    expect(
-      await screen.findByRole("heading", { name: "Admin sign-in", exact: true }),
-    ).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("link", { name: "Admin portal" }));
+    expect(await screen.findByRole("heading", { name: "Admin sign-in" })).toBeInTheDocument();
     expect(screen.getByLabelText("Password", { exact: true })).toHaveAttribute("type", "password");
     expect(window.location.pathname).toBe("/admin");
   });
