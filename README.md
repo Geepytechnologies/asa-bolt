@@ -324,3 +324,6 @@ owner's request while its integration is implemented. No payments, live GPS,
 driver accounts, automated driver assignment, ratings, or map autocomplete are in this MVP. Google Maps
 links and landmark notes are supported without a paid map integration. The current release checklist
 is [TODO.md](TODO.md).
+
+For stakeholder testing, use [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md), which lists the features,
+setup prerequisites, expected results, and integrations that still need live configuration.
